@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "package": "pnpm build && web-ext build -s ./dist --overwrite-dest",
     "lint": "pnpm lint:eslint && pnpm lint:prettier",
     "lint:eslint": "eslint . --ext ts,mts,cts,tsx,js,mjs,cjs,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:prettier": "prettier --check '**/*.{json,md,yml,yaml}'",
@@ -40,6 +41,7 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "prettier": "^3.2.4",
     "typescript": "^5.3.3",
-    "vite": "4"
+    "vite": "4",
+    "web-ext": "^7.11.0"
   }
 }
