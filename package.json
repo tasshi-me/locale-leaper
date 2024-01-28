@@ -8,8 +8,12 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "fix": "pnpm lint --fix",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:eslint": "eslint . --ext ts,mts,cts,tsx,js,mjs,cjs,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:prettier": "prettier --check '**/*.{json,md,yml,yaml}'",
+    "fix": "pnpm fix:eslint && pnpm fix:prettier",
+    "fix:eslint": "pnpm lint:eslint --fix",
+    "fix:prettier": "pnpm lint:prettier --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,6 +27,7 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "2.0.0-beta.21",
+    "@cybozu/eslint-config": "^22.0.2",
     "@kintone/dts-gen": "^8.0.3",
     "@types/chrome": "^0.0.254",
     "@types/react": "^18.2.43",

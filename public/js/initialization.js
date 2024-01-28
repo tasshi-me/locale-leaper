@@ -1,24 +1,26 @@
-const getLoginUser = async ()=> {
-  if(typeof kintone === 'object'){
-    return kintone.getLoginUser()
+const getLoginUser = async () => {
+  if (typeof window.kintone === "object") {
+    return window.kintone.getLoginUser();
   }
-  if (typeof garoon === 'object'){
-    return garoon.base.user.getLoginUser()
+  if (typeof window.garoon === "object") {
+    return window.garoon.base.user.getLoginUser();
   }
-}
+  throw new Error("Failed to initialize getLoginUser function");
+};
 
-const getRequestToken = async ()=> {
-  if(typeof kintone === 'object'){
-    return kintone.getRequestToken()
+const getRequestToken = async () => {
+  if (typeof window.kintone === "object") {
+    return window.kintone.getRequestToken();
   }
-  if (typeof garoon === 'object'){
-    return await garoon.connect.kintone.getRequestToken();
+  if (typeof window.garoon === "object") {
+    return window.garoon.connect.kintone.getRequestToken();
   }
-}
+  throw new Error("Failed to initialize getRequestToken function");
+};
 
-(async ()=> {
+(async () => {
   const loginUser = await getLoginUser();
-  if (loginUser !== undefined){
+  if (loginUser !== undefined) {
     document.body.dataset.userId = loginUser.id;
     document.body.dataset.locale = loginUser.language;
     document.body.dataset.timezone = loginUser.timezone;
@@ -26,5 +28,4 @@ const getRequestToken = async ()=> {
 
     document.body.dispatchEvent(new CustomEvent("locale-leaper-initialized"));
   }
-})()
-
+})();

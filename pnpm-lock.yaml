@@ -22,6 +22,9 @@ devDependencies:
   '@crxjs/vite-plugin':
     specifier: 2.0.0-beta.21
     version: 2.0.0-beta.21
+  '@cybozu/eslint-config':
+    specifier: ^22.0.2
+    version: 22.0.2(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3)
   '@kintone/dts-gen':
     specifier: ^8.0.3
     version: 8.0.4(typescript@5.3.3)

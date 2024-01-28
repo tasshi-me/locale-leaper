@@ -18,12 +18,12 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
   },
   "include": [
     "src/**/*",
     "public/js/**/*",
-    "./node_modules/@kintone/dts-gen/kintone.d.ts"
+    "./node_modules/@kintone/dts-gen/kintone.d.ts",
   ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
 }

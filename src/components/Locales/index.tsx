@@ -1,23 +1,35 @@
-import {Locale, locales} from "../../utils/locale.ts";
+import { Locale, locales } from "../../utils/locale.ts";
 import React from "react";
-import {List} from "../List";
-import {useLocale} from "../../utils/hooks.ts";
+import { List } from "../List";
+import { useLocale } from "../../utils/hooks.ts";
 
 type Props = {
-  callback: (locale: Locale)=> void
-}
+  callback: (locale: Locale) => void;
+};
 
-const Locales: React.FC<Props> = ({callback})=> {
-  const {locale, mutateLocale} = useLocale()
+const Locales: React.FC<Props> = ({ callback }) => {
+  const { locale, mutateLocale } = useLocale();
 
-  const createLabel = (t: typeof locales[number]): string => t.label
-  const createKey = (t: typeof locales[number]): Locale => t.key
+  const createLabel = (t: (typeof locales)[number]): string => t.label;
+  const createKey = (t: (typeof locales)[number]): Locale => t.key;
 
-  return (<>
-    <h2>Locale</h2>
-    <List items={locales} createKey={createKey} createLabel={createLabel} initialActiveKey={locale} itemsPerRow={2} callback={async (key)=>{await mutateLocale(key); callback(key)}}></List>
-  </>)
-}
+  return (
+    <>
+      <h2>Locale</h2>
+      <List
+        items={locales}
+        createKey={createKey}
+        createLabel={createLabel}
+        initialActiveKey={locale}
+        itemsPerRow={2}
+        callback={async (key) => {
+          await mutateLocale(key);
+          callback(key);
+        }}
+      />
+    </>
+  );
+};
 
 // const LocaleComparator = (currentLocale: Locale)=> (t1: Locale, t2: Locale): number => {
 //   if(t1 === currentLocale) return -1
@@ -25,4 +37,4 @@ const Locales: React.FC<Props> = ({callback})=> {
 //   return 0
 // }
 
-export default Locales
+export default Locales;
