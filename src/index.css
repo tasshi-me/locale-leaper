@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: start center;
+  box-sizing: border-box;
+  /* https://groups.google.com/a/chromium.org/g/chromium-extensions/c/3A8d3oiOV_E?pli=1 */
+  min-width: 640px;
+  min-height: 100vh;
+  max-width: 800px;
+  max-height: 600px;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  width: 100%;
+  /*height: 600px;*/
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  /*padding: 0;*/
+  text-align: center;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,45 +44,9 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 button {
@@ -72,10 +58,12 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  /*transition: border-color 0.25s, background-color 0.25s;*/
+  width: 100%;
 }
 button:hover {
   border-color: #646cff;
+  background: #646cff;
 }
 button:focus,
 button:focus-visible {
