@@ -36,6 +36,20 @@ const manifest = (mode: string)=> defineManifest({
       ]
     }
   ],
+  web_accessible_resources: [
+    {resources: [
+        "js/initialization.js"
+      ],
+    matches: [
+      "https://*.cybozu.com/*",
+      "https://*.cybozu-dev.com/*",
+      "https://*.kintone.com/*",
+      "https://*.kintone-dev.com/*",
+      "https://*.cybozu.cn/*",
+      "https://*.cybozu-dev.cn/*",
+    ]
+    },
+  ]
 })
 
 export default defineConfig(({mode})=> ({
