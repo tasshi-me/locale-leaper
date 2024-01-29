@@ -22,6 +22,7 @@ const getRequestToken = async () => {
   const loginUser = await getLoginUser();
   if (loginUser !== undefined) {
     document.body.dataset.userId = loginUser.id;
+    document.body.dataset.userCode = loginUser.code;
     document.body.dataset.locale = loginUser.language;
     document.body.dataset.timezone = loginUser.timezone;
     document.body.dataset.requestToken = await getRequestToken();

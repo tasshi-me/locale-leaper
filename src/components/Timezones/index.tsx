@@ -6,6 +6,7 @@ import {
   timezones,
 } from "../../utils/timezone.ts";
 import { useLocale, useTimezone } from "../../utils/hooks.ts";
+import { TimezoneLabel } from "./TimezoneLabel.tsx";
 
 type Props = {
   callback: (timezone: Timezone) => void;
@@ -15,10 +16,11 @@ const Timezones: React.FC<Props> = ({ callback }) => {
   const { timezone, mutateTimezone } = useTimezone();
   const { locale } = useLocale();
   const createLabel = (t: (typeof timezones)[number]): React.ReactNode => (
-    <>
-      <span>{t.utc}</span>
-      <span>{t[localeToTimezoneLabelId(locale)]}</span>
-    </>
+    <TimezoneLabel
+      utc={t.utc}
+      name={t[localeToTimezoneLabelId(locale)]}
+      offset={t.offset}
+    />
   );
   const createKey = (t: (typeof timezones)[number]): Timezone => t.id;
   return (

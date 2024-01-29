@@ -24,7 +24,12 @@ export const getTabId = async () => {
   return tabId;
 };
 
-type EmbeddedInformationKey = "userId" | "locale" | "timezone" | "requestToken";
+type EmbeddedInformationKey =
+  | "userId"
+  | "userCode"
+  | "locale"
+  | "timezone"
+  | "requestToken";
 
 export const getEmbeddedInformation = async (
   tabId: number,

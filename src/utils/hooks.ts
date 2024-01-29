@@ -1,11 +1,11 @@
 import { Locale } from "./locale.ts";
 import useSWR from "swr";
 import {
-  getLocaleOffline,
+  getUserCode,
   getRequestToken,
-  getTimezoneOffline,
   updateLocale,
   updateTimezone,
+  getUser,
 } from "./fetchers.ts";
 import { getTabId } from "./chrome.ts";
 import { Timezone } from "./timezone.ts";
@@ -24,6 +24,14 @@ export const useTabId: Hook<number, "tabId"> = () => {
   return { tabId: tabId };
 };
 
+export const useUserCode: Hook<string, "userCode"> = () => {
+  const { tabId } = useTabId();
+  const { data: userCode } = useSWR("userCode", () => getUserCode(tabId), {
+    suspense: true,
+  });
+  return { userCode: userCode };
+};
+
 export const useRequestToken: Hook<string, "requestToken"> = () => {
   const { tabId } = useTabId();
   const { data: requestToken } = useSWR(
@@ -37,31 +45,33 @@ export const useRequestToken: Hook<string, "requestToken"> = () => {
 export const useLocale: HookWithMutate<Locale, "locale"> = () => {
   const { tabId } = useTabId();
   const { requestToken } = useRequestToken();
-  const { data: locale, mutate } = useSWR(
-    "locale",
-    () => getLocaleOffline(tabId),
+  const { userCode } = useUserCode();
+  const { data, mutate } = useSWR(
+    "user",
+    () => getUser({ tabId, requestToken, userCode }),
     { suspense: true },
   );
   const mutateLocale = async (newLocale: Locale) => {
     await updateLocale({ tabId, requestToken, locale: newLocale });
-    await mutate(newLocale, false);
+    await mutate({ ...data, locale: newLocale }, false);
     return newLocale;
   };
-  return { locale, mutateLocale };
+  return { locale: data.locale, mutateLocale };
 };
 
 export const useTimezone: HookWithMutate<Timezone, "timezone"> = () => {
   const { tabId } = useTabId();
   const { requestToken } = useRequestToken();
-  const { data: timezone, mutate } = useSWR(
-    "timezone",
-    () => getTimezoneOffline(tabId),
+  const { userCode } = useUserCode();
+  const { data, mutate } = useSWR(
+    "user",
+    () => getUser({ tabId, requestToken, userCode }),
     { suspense: true },
   );
   const mutateTimezone = async (newTimezone: Timezone) => {
     await updateTimezone({ tabId, requestToken, timezone: newTimezone });
-    await mutate(newTimezone, false);
+    await mutate({ ...data, timezone: newTimezone }, false);
     return newTimezone;
   };
-  return { timezone, mutateTimezone };
+  return { timezone: data.timezone, mutateTimezone };
 };

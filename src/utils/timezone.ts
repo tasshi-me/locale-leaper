@@ -1,10 +1,10 @@
 // https://jp.cybozu.help/general/en/admin/list_systemadmin/list_localization/timezone.html
-import { Locale } from "./locale.ts";
 
 export const timezones = [
   {
     id: "Etc/GMT+12",
     utc: "UTC-12:00",
+    offset: -(12 * 60),
     en: "International Date Line West",
     ja: "国際日付変更線 西側",
     zh: "国际日期变更线西",
@@ -13,6 +13,7 @@ export const timezones = [
   {
     id: "Etc/GMT+11",
     utc: "UTC-11:00",
+    offset: -(11 * 60),
     en: "Coordinated Universal Time-11",
     ja: "協定世界時-11",
     zh: "协调世界时-11",
@@ -21,6 +22,7 @@ export const timezones = [
   {
     id: "Pacific/Honolulu",
     utc: "UTC-10:00",
+    offset: -(10 * 60),
     en: "Hawaii",
     ja: "ハワイ",
     zh: "夏威夷",
@@ -29,6 +31,7 @@ export const timezones = [
   {
     id: "America/Anchorage",
     utc: "UTC-09:00",
+    offset: -(9 * 60),
     en: "Alaska",
     ja: "アラスカ",
     zh: "安克雷奇",
@@ -37,6 +40,7 @@ export const timezones = [
   {
     id: "America/Santa_Isabel",
     utc: "UTC-08:00",
+    offset: -(8 * 60),
     en: "Baja California",
     ja: "バハカリフォルニア",
     zh: "下加利福尼亚州",
@@ -45,6 +49,7 @@ export const timezones = [
   {
     id: "America/Los_Angeles",
     utc: "UTC-08:00",
+    offset: -(8 * 60),
     en: "Pacific Time (US and Canada)",
     ja: "太平洋標準時(米国およびカナダ)",
     zh: "太平洋时间（美国和加拿大）",
@@ -53,6 +58,7 @@ export const timezones = [
   {
     id: "America/Chihuahua",
     utc: "UTC-07:00",
+    offset: -(7 * 60),
     en: "Chihuahua, La Paz, Mazatlan",
     ja: "チワワ、ラパス、マサトラン",
     zh: "奇瓦瓦,拉巴斯,马萨特兰",
@@ -61,6 +67,7 @@ export const timezones = [
   {
     id: "America/Phoenix",
     utc: "UTC-07:00",
+    offset: -(7 * 60),
     en: "Arizona",
     ja: "アリゾナ",
     zh: "亚利桑那",
@@ -69,6 +76,7 @@ export const timezones = [
   {
     id: "America/Denver",
     utc: "UTC-07:00",
+    offset: -(7 * 60),
     en: "Mountain Time (US and Canada)",
     ja: "山地標準時(米国およびカナダ)",
     zh: "山地时间（美国和加拿大）",
@@ -77,6 +85,7 @@ export const timezones = [
   {
     id: "America/Guatemala",
     utc: "UTC-06:00",
+    offset: -(6 * 60),
     en: "Central America",
     ja: "中央アメリカ",
     zh: "中美洲",
@@ -85,6 +94,7 @@ export const timezones = [
   {
     id: "America/Chicago",
     utc: "UTC-06:00",
+    offset: -(6 * 60),
     en: "Central Time (US and Canada)",
     ja: "中部標準時(米国およびカナダ)",
     zh: "中部时间（美国和加拿大）",
@@ -93,6 +103,7 @@ export const timezones = [
   {
     id: "America/Regina",
     utc: "UTC-06:00",
+    offset: -(6 * 60),
     en: "Saskatchewan",
     ja: "サスカチュワン",
     zh: "萨斯喀彻温",
@@ -101,6 +112,7 @@ export const timezones = [
   {
     id: "America/Mexico_City",
     utc: "UTC-06:00",
+    offset: -(6 * 60),
     en: "Guadalajara, Mexico City, Monterey",
     ja: "グアダラハラ、メキシコシティ、モンテレー",
     zh: "瓜达拉哈拉,墨西哥城,蒙特雷",
@@ -109,6 +121,7 @@ export const timezones = [
   {
     id: "America/Bogota",
     utc: "UTC-05:00",
+    offset: -(5 * 60),
     en: "Bogota, Lima, Quito",
     ja: "ボゴタ、リマ、キト",
     zh: "波哥大,利马,基多",
@@ -117,6 +130,7 @@ export const timezones = [
   {
     id: "America/Indiana/Indianapolis",
     utc: "UTC-05:00",
+    offset: -(5 * 60),
     en: "Indiana (East)",
     ja: "インディアナ東部",
     zh: "印地安那州（东部）",
@@ -125,6 +139,7 @@ export const timezones = [
   {
     id: "America/New_York",
     utc: "UTC-05:00",
+    offset: -(5 * 60),
     en: "Eastern Time (US and Canada)",
     ja: "東部標準時(米国およびカナダ)",
     zh: "东部时间（美国和加拿大）",
@@ -133,6 +148,7 @@ export const timezones = [
   {
     id: "America/Caracas",
     utc: "UTC-04:30",
+    offset: -(4 * 60 + 30),
     en: "Caracas",
     ja: "カラカス",
     zh: "加拉加斯",
@@ -141,6 +157,7 @@ export const timezones = [
   {
     id: "America/Halifax",
     utc: "UTC-04:00",
+    offset: -(4 * 60),
     en: "Atlantic Time (Canada)",
     ja: "大西洋標準時(カナダ)",
     zh: "大西洋时间（加拿大）",
@@ -149,6 +166,7 @@ export const timezones = [
   {
     id: "America/Asuncion",
     utc: "UTC-04:00",
+    offset: -(4 * 60),
     en: "Asuncion",
     ja: "アスンシオン",
     zh: "亚松森",
@@ -157,6 +175,7 @@ export const timezones = [
   {
     id: "America/La_Paz",
     utc: "UTC-04:00",
+    offset: -(4 * 60),
     en: "Georgetown, La Paz, Manaus, San Juan",
     ja: "ジョージタウン、ラパス、マナウス、サンフアン",
     zh: "乔治敦,拉巴斯,马瑙斯,圣胡安",
@@ -165,6 +184,7 @@ export const timezones = [
   {
     id: "America/Cuiaba",
     utc: "UTC-04:00",
+    offset: -(4 * 60),
     en: "Cuiaba",
     ja: "クイアバ",
     zh: "库亚巴",
@@ -173,6 +193,7 @@ export const timezones = [
   {
     id: "America/Santiago",
     utc: "UTC-04:00",
+    offset: -(4 * 60),
     en: "Santiago",
     ja: "サンチアゴ",
     zh: "圣地亚哥",
@@ -181,6 +202,7 @@ export const timezones = [
   {
     id: "America/St_Johns",
     utc: "UTC-03:30",
+    offset: -(3 * 60 + 30),
     en: "Newfoundland",
     ja: "ニューファンドランド",
     zh: "纽芬兰",
@@ -189,6 +211,7 @@ export const timezones = [
   {
     id: "America/Sao_Paulo",
     utc: "UTC-03:00",
+    offset: -(3 * 60),
     en: "Brasilia",
     ja: "ブラジリア",
     zh: "巴西利亚",
@@ -197,6 +220,7 @@ export const timezones = [
   {
     id: "America/Godthab",
     utc: "UTC-03:00",
+    offset: -(3 * 60),
     en: "Greenland",
     ja: "グリーンランド",
     zh: "格陵兰",
@@ -205,6 +229,7 @@ export const timezones = [
   {
     id: "America/Cayenne",
     utc: "UTC-03:00",
+    offset: -(3 * 60),
     en: "Cayenne, Fortaleza",
     ja: "カイエンヌ、フォルタレザ",
     zh: "卡宴,福塔雷萨",
@@ -213,6 +238,7 @@ export const timezones = [
   {
     id: "America/Argentina/Buenos_Aires",
     utc: "UTC-03:00",
+    offset: -(3 * 60),
     en: "Buenos Aires",
     ja: "ブエノスアイレス",
     zh: "布宜诺斯艾利斯",
@@ -221,6 +247,7 @@ export const timezones = [
   {
     id: "America/Montevideo",
     utc: "UTC-03:00",
+    offset: -(3 * 60),
     en: "Montevideo",
     ja: "モンテビデオ",
     zh: "蒙得维的亚",
@@ -229,6 +256,7 @@ export const timezones = [
   {
     id: "Etc/GMT+2",
     utc: "UTC-02:00",
+    offset: -(2 * 60),
     en: "Coordinated Universal Time-2",
     ja: "協定世界時-2",
     zh: "协调世界时-2",
@@ -237,6 +265,7 @@ export const timezones = [
   {
     id: "Atlantic/Cape_Verde",
     utc: "UTC-01:00",
+    offset: -(1 * 60),
     en: "Cape Verde",
     ja: "カーボベルデ諸島",
     zh: "佛得角群岛",
@@ -245,6 +274,7 @@ export const timezones = [
   {
     id: "Atlantic/Azores",
     utc: "UTC-01:00",
+    offset: -(1 * 60),
     en: "Azores",
     ja: "アゾレス",
     zh: "亚速尔群岛",
@@ -253,6 +283,7 @@ export const timezones = [
   {
     id: "Africa/Casablanca",
     utc: "UTC+00:00",
+    offset: 0 * 60,
     en: "Casablanca",
     ja: "カサブランカ",
     zh: "卡萨布兰卡",
@@ -261,6 +292,7 @@ export const timezones = [
   {
     id: "Atlantic/Reykjavik",
     utc: "UTC+00:00",
+    offset: 0 * 60,
     en: "Monrovia, Reykjavik",
     ja: "モンロビア、レイキャビク",
     zh: "蒙罗维亚,雷克雅未克",
@@ -269,6 +301,7 @@ export const timezones = [
   {
     id: "Europe/London",
     utc: "UTC+00:00",
+    offset: 0 * 60,
     en: "Dublin, Edinburgh, Lisbon, London",
     ja: "ダブリン、エジンバラ、リスボン、ロンドン",
     zh: "都柏林,爱丁堡,里斯本,伦敦",
@@ -277,6 +310,7 @@ export const timezones = [
   {
     id: "Etc/GMT",
     utc: "UTC+00:00",
+    offset: 0 * 60,
     en: "Coordinated Universal Time",
     ja: "協定世界時",
     zh: "协调世界时",
@@ -285,6 +319,7 @@ export const timezones = [
   {
     id: "Europe/Berlin",
     utc: "UTC+01:00",
+    offset: 1 * 60,
     en: "Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
     ja: "アムステルダム、ベルリン、ベルン、ローマ、ストックホルム、ウィーン",
     zh: "阿姆斯特丹,柏林,伯尔尼,罗马,斯德哥尔摩,维也纳",
@@ -293,6 +328,7 @@ export const timezones = [
   {
     id: "Europe/Paris",
     utc: "UTC+01:00",
+    offset: 1 * 60,
     en: "Brussels, Copenhagen, Madrid, Paris",
     ja: "ブリュッセル、コペンハーゲン、マドリード、パリ",
     zh: "布鲁塞尔,哥本哈根,马德里,巴黎",
@@ -301,6 +337,7 @@ export const timezones = [
   {
     id: "Africa/Lagos",
     utc: "UTC+01:00",
+    offset: 1 * 60,
     en: "West Central Africa",
     ja: "西中央アフリカ",
     zh: "中非西部",
@@ -309,6 +346,7 @@ export const timezones = [
   {
     id: "Europe/Budapest",
     utc: "UTC+01:00",
+    offset: 1 * 60,
     en: "Belgrade, Bratislava, Budapest, Ljubljana, Prague",
     ja: "ベオグラード、ブラチスラバ、ブダペスト、リュブリャナ、プラハ",
     zh: "贝尔格莱德,布拉迪斯拉发,布达佩斯,卢布尔雅那,布拉格",
@@ -317,6 +355,7 @@ export const timezones = [
   {
     id: "Europe/Warsaw",
     utc: "UTC+01:00",
+    offset: 1 * 60,
     en: "Sarajevo, Skopje, Warsaw, Zagreb",
     ja: "サラエボ、スコピエ、ワルシャワ、ザグレブ",
     zh: "萨拉热窝,斯科普里,华沙,萨格勒布",
@@ -325,6 +364,7 @@ export const timezones = [
   {
     id: "Africa/Windhoek",
     utc: "UTC+01:00",
+    offset: 1 * 60,
     en: "Windhoek",
     ja: "ウィントフック",
     zh: "温得和克",
@@ -333,6 +373,7 @@ export const timezones = [
   {
     id: "Europe/Istanbul",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Athens, Bucharest, Istanbul",
     ja: "アテネ、ブカレスト、イスタンブール",
     zh: "雅典,布加勒斯特,伊斯坦布尔",
@@ -341,6 +382,7 @@ export const timezones = [
   {
     id: "Europe/Kiev",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
     ja: "ヘルシンキ、キーウ、リガ、ソフィア、タリン、ビリニュス",
     zh: "赫尔辛基,基辅,里加,索非亚,塔林,维尔纽斯",
@@ -349,6 +391,7 @@ export const timezones = [
   {
     id: "Africa/Cairo",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Cairo",
     ja: "カイロ",
     zh: "开罗",
@@ -357,6 +400,7 @@ export const timezones = [
   {
     id: "Asia/Damascus",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Damascus",
     ja: "ダマスカス",
     zh: "大马士革",
@@ -365,6 +409,7 @@ export const timezones = [
   {
     id: "Asia/Amman",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Amman",
     ja: "アンマン",
     zh: "安曼",
@@ -373,6 +418,7 @@ export const timezones = [
   {
     id: "Africa/Johannesburg",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Harare, Pretoria",
     ja: "ハラーレ、プレトリア",
     zh: "哈拉雷,比勒陀利亚",
@@ -381,6 +427,7 @@ export const timezones = [
   {
     id: "Asia/Jerusalem",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Jerusalem",
     ja: "エルサレム",
     zh: "耶路撒冷",
@@ -389,6 +436,7 @@ export const timezones = [
   {
     id: "Asia/Beirut",
     utc: "UTC+02:00",
+    offset: 2 * 60,
     en: "Beirut",
     ja: "ベイルート",
     zh: "贝鲁特",
@@ -397,6 +445,7 @@ export const timezones = [
   {
     id: "Asia/Baghdad",
     utc: "UTC+03:00",
+    offset: 3 * 60,
     en: "Baghdad",
     ja: "バグダッド",
     zh: "巴格达",
@@ -405,6 +454,7 @@ export const timezones = [
   {
     id: "Europe/Minsk",
     utc: "UTC+03:00",
+    offset: 3 * 60,
     en: "Minsk",
     ja: "ミンスク",
     zh: "明斯克",
@@ -413,6 +463,7 @@ export const timezones = [
   {
     id: "Asia/Riyadh",
     utc: "UTC+03:00",
+    offset: 3 * 60,
     en: "Kuwait, Riyadh",
     ja: "クエート、リヤド",
     zh: "利雅得",
@@ -421,6 +472,7 @@ export const timezones = [
   {
     id: "Africa/Nairobi",
     utc: "UTC+03:00",
+    offset: 3 * 60,
     en: "Nairobi",
     ja: "ナイロビ",
     zh: "内罗毕",
@@ -429,6 +481,7 @@ export const timezones = [
   {
     id: "Asia/Tehran",
     utc: "UTC+03:30",
+    offset: 3 * 60 + 30,
     en: "Tehran",
     ja: "テヘラン",
     zh: "德黑兰",
@@ -437,6 +490,7 @@ export const timezones = [
   {
     id: "Europe/Moscow",
     utc: "UTC+04:00",
+    offset: 4 * 60,
     en: "Moscow, St. Petersburg, Volgograd",
     ja: "モスクワ、サンクトペテルブルグ、ボルゴグラード",
     zh: "莫斯科,圣彼得堡,伏尔加格勒",
@@ -445,6 +499,7 @@ export const timezones = [
   {
     id: "Asia/Tbilisi",
     utc: "UTC+04:00",
+    offset: 4 * 60,
     en: "Tbilisi",
     ja: "トビリシ",
     zh: "第比利斯",
@@ -453,6 +508,7 @@ export const timezones = [
   {
     id: "Asia/Yerevan",
     utc: "UTC+04:00",
+    offset: 4 * 60,
     en: "Yerevan",
     ja: "エレバン",
     zh: "埃里温",
@@ -461,6 +517,7 @@ export const timezones = [
   {
     id: "Asia/Dubai",
     utc: "UTC+04:00",
+    offset: 4 * 60,
     en: "Abu Dhabi, Muscat",
     ja: "アブダビ、マスカット",
     zh: "阿布扎比,马斯喀特",
@@ -469,6 +526,7 @@ export const timezones = [
   {
     id: "Asia/Baku",
     utc: "UTC+04:00",
+    offset: 4 * 60,
     en: "Baku",
     ja: "バクー",
     zh: "巴库",
@@ -477,6 +535,7 @@ export const timezones = [
   {
     id: "Indian/Mauritius",
     utc: "UTC+04:00",
+    offset: 4 * 60,
     en: "Port Louis",
     ja: "ポートルイス",
     zh: "路易港",
@@ -485,6 +544,7 @@ export const timezones = [
   {
     id: "Asia/Kabul",
     utc: "UTC+04:30",
+    offset: 4 * 60 + 30,
     en: "Kabul",
     ja: "カブール",
     zh: "喀布尔",
@@ -493,6 +553,7 @@ export const timezones = [
   {
     id: "Asia/Tashkent",
     utc: "UTC+05:00",
+    offset: 5 * 60,
     en: "Tashkent",
     ja: "タシケント",
     zh: "塔什干",
@@ -501,6 +562,7 @@ export const timezones = [
   {
     id: "Asia/Karachi",
     utc: "UTC+05:00",
+    offset: 5 * 60,
     en: "Islamabad, Karachi",
     ja: "イスラマバード、カラチ",
     zh: "伊斯兰堡,卡拉奇",
@@ -509,6 +571,7 @@ export const timezones = [
   {
     id: "Asia/Colombo",
     utc: "UTC+05:30",
+    offset: 5 * 60 + 30,
     en: "Sri Jayewardenepura Kotte",
     ja: "スリジャヤワルダナプラコッテ",
     zh: "斯里加亚渥登普拉",
@@ -517,6 +580,7 @@ export const timezones = [
   {
     id: "Asia/Kolkata",
     utc: "UTC+05:30",
+    offset: 5 * 60 + 30,
     en: "Chennai, Kolkata, Mumbai, New Delhi",
     ja: "チェンナイ、コルカタ、ムンバイ、ニューデリー",
     zh: "钦奈,加尔各答,孟买,新德里",
@@ -525,6 +589,7 @@ export const timezones = [
   {
     id: "Asia/Kathmandu",
     utc: "UTC+05:45",
+    offset: 5 * 60 + 45,
     en: "Kathmandu",
     ja: "カトマンズ",
     zh: "加德满都",
@@ -533,6 +598,7 @@ export const timezones = [
   {
     id: "Asia/Almaty",
     utc: "UTC+06:00",
+    offset: 6 * 60,
     en: "Astana",
     ja: "アスタナ",
     zh: "阿斯塔纳",
@@ -541,6 +607,7 @@ export const timezones = [
   {
     id: "Asia/Dhaka",
     utc: "UTC+06:00",
+    offset: 6 * 60,
     en: "Dhaka",
     ja: "ダッカ",
     zh: "达卡",
@@ -549,6 +616,7 @@ export const timezones = [
   {
     id: "Asia/Yekaterinburg",
     utc: "UTC+06:00",
+    offset: 6 * 60,
     en: "Yekaterinburg",
     ja: "エカテリンブルグ",
     zh: "叶卡捷琳堡",
@@ -557,6 +625,7 @@ export const timezones = [
   {
     id: "Asia/Yangon",
     utc: "UTC+06:30",
+    offset: 6 * 60 + 30,
     en: "Yangon",
     ja: "ヤンゴン",
     zh: "仰光",
@@ -565,6 +634,7 @@ export const timezones = [
   {
     id: "Asia/Bangkok",
     utc: "UTC+07:00",
+    offset: 7 * 60,
     en: "Bangkok, Hanoi, Jakarta",
     ja: "バンコク、ハノイ、ジャカルタ",
     zh: "曼谷,河内,雅加达",
@@ -573,6 +643,7 @@ export const timezones = [
   {
     id: "Asia/Novosibirsk",
     utc: "UTC+07:00",
+    offset: 7 * 60,
     en: "Novosibirsk",
     ja: "ノヴォシビルスク",
     zh: "新西伯利亚",
@@ -581,6 +652,7 @@ export const timezones = [
   {
     id: "Asia/Krasnoyarsk",
     utc: "UTC+08:00",
+    offset: 8 * 60,
     en: "Krasnoyarsk",
     ja: "クラスノヤルスク",
     zh: "克拉斯诺亚尔斯克",
@@ -589,6 +661,7 @@ export const timezones = [
   {
     id: "Asia/Ulaanbaatar",
     utc: "UTC+08:00",
+    offset: 8 * 60,
     en: "Ulaanbaatar",
     ja: "ウランバートル",
     zh: "乌兰巴托",
@@ -597,6 +670,7 @@ export const timezones = [
   {
     id: "Asia/Shanghai",
     utc: "UTC+08:00",
+    offset: 8 * 60,
     en: "Beijing, Chongqing, Hong Kong, Urumqi",
     ja: "北京、重慶、香港、ウルムチ",
     zh: "北京,重庆,香港,乌鲁木齐",
@@ -605,6 +679,7 @@ export const timezones = [
   {
     id: "Australia/Perth",
     utc: "UTC+08:00",
+    offset: 8 * 60,
     en: "Perth",
     ja: "パース",
     zh: "佩思",
@@ -613,6 +688,7 @@ export const timezones = [
   {
     id: "Asia/Singapore",
     utc: "UTC+08:00",
+    offset: 8 * 60,
     en: "Kuala Lumpur, Singapore",
     ja: "クアラルンプール、シンガポール",
     zh: "吉隆坡,新加坡",
@@ -621,6 +697,7 @@ export const timezones = [
   {
     id: "Asia/Taipei",
     utc: "UTC+08:00",
+    offset: 8 * 60,
     en: "Taipei",
     ja: "台北",
     zh: "台北",
@@ -629,6 +706,7 @@ export const timezones = [
   {
     id: "Asia/Irkutsk",
     utc: "UTC+09:00",
+    offset: 9 * 60,
     en: "Irkutsk",
     ja: "イルクーツク",
     zh: "伊尔库茨克",
@@ -637,6 +715,7 @@ export const timezones = [
   {
     id: "Asia/Seoul",
     utc: "UTC+09:00",
+    offset: 9 * 60,
     en: "Seoul",
     ja: "ソウル",
     zh: "首尔",
@@ -645,6 +724,7 @@ export const timezones = [
   {
     id: "Asia/Tokyo",
     utc: "UTC+09:00",
+    offset: 9 * 60,
     en: "Osaka, Sapporo, Tokyo",
     ja: "大阪、札幌、東京",
     zh: "大阪,札幌,东京",
@@ -653,6 +733,7 @@ export const timezones = [
   {
     id: "Australia/Darwin",
     utc: "UTC+09:30",
+    offset: 9 * 60 + 30,
     en: "Darwin",
     ja: "ダーウィン",
     zh: "达尔文",
@@ -661,6 +742,7 @@ export const timezones = [
   {
     id: "Australia/Adelaide",
     utc: "UTC+09:30",
+    offset: 9 * 60 + 30,
     en: "Adelaide",
     ja: "アデレード",
     zh: "阿德莱德",
@@ -669,6 +751,7 @@ export const timezones = [
   {
     id: "Australia/Hobart",
     utc: "UTC+10:00",
+    offset: 10 * 60,
     en: "Hobart",
     ja: "ホバート",
     zh: "霍巴特",
@@ -677,6 +760,7 @@ export const timezones = [
   {
     id: "Asia/Yakutsk",
     utc: "UTC+10:00",
+    offset: 10 * 60,
     en: "Yakutsk",
     ja: "ヤクーツク",
     zh: "雅库茨克",
@@ -685,6 +769,7 @@ export const timezones = [
   {
     id: "Australia/Brisbane",
     utc: "UTC+10:00",
+    offset: 10 * 60,
     en: "Brisbane",
     ja: "ブリスベン",
     zh: "布里斯班",
@@ -693,6 +778,7 @@ export const timezones = [
   {
     id: "Pacific/Port_Moresby",
     utc: "UTC+10:00",
+    offset: 10 * 60,
     en: "Guam, Port Moresby",
     ja: "グアム、ポートモレスビー",
     zh: "关岛,莫尔兹比港",
@@ -701,6 +787,7 @@ export const timezones = [
   {
     id: "Australia/Sydney",
     utc: "UTC+10:00",
+    offset: 10 * 60,
     en: "Canberra, Melbourne, Sydney",
     ja: "キャンベラ、メルボルン、シドニー",
     zh: "堪培拉,墨尔本,悉尼",
@@ -709,6 +796,7 @@ export const timezones = [
   {
     id: "Asia/Vladivostok",
     utc: "UTC+11:00",
+    offset: 11 * 60,
     en: "Vladivostok",
     ja: "ウラジオストク",
     zh: "符拉迪沃斯托克",
@@ -717,6 +805,7 @@ export const timezones = [
   {
     id: "Pacific/Guadalcanal",
     utc: "UTC+11:00",
+    offset: 11 * 60,
     en: "Solomon Islands, New Caledonia",
     ja: "ソロモン諸島、ニューカレドニア",
     zh: "所罗门群岛,新喀里多尼亚",
@@ -725,6 +814,7 @@ export const timezones = [
   {
     id: "Etc/GMT-12",
     utc: "UTC+12:00",
+    offset: 12 * 60,
     en: "Coordinated Universal Time+12",
     ja: "協定世界時+12",
     zh: "协调世界时+12",
@@ -733,6 +823,7 @@ export const timezones = [
   {
     id: "Pacific/Fiji",
     utc: "UTC+12:00",
+    offset: 12 * 60,
     en: "Fiji, Marshall Islands",
     ja: "フィジー、マーシャル諸島",
     zh: "斐济,马绍尔群岛",
@@ -741,6 +832,7 @@ export const timezones = [
   {
     id: "Asia/Magadan",
     utc: "UTC+12:00",
+    offset: 12 * 60,
     en: "Magadan",
     ja: "マガダン",
     zh: "马加丹",
@@ -749,6 +841,7 @@ export const timezones = [
   {
     id: "Pacific/Auckland",
     utc: "UTC+12:00",
+    offset: 12 * 60,
     en: "Auckland, Wellington",
     ja: "オークランド、ウェリントン",
     zh: "奥克兰,惠灵顿",
@@ -757,6 +850,7 @@ export const timezones = [
   {
     id: "Pacific/Tongatapu",
     utc: "UTC+13:00",
+    offset: 13 * 60,
     en: "Nuku'alofa",
     ja: "ヌクアロファ",
     zh: "努库阿洛法",
@@ -765,6 +859,7 @@ export const timezones = [
   {
     id: "Pacific/Apia",
     utc: "UTC+13:00",
+    offset: 13 * 60,
     en: "Samoa",
     ja: "サモア",
     zh: "萨摩亚群岛",
@@ -773,6 +868,7 @@ export const timezones = [
 ] as const satisfies Array<{
   id: string;
   utc: string;
+  offset: number;
   en: string;
   ja: string;
   zh: string;
@@ -780,11 +876,11 @@ export const timezones = [
 }>;
 
 export const localeToTimezoneLabelId = (
-  locale: Locale,
-): keyof (typeof timezones)[number] => {
+  locale: string,
+): Exclude<keyof (typeof timezones)[number], "id" | "utc" | "offset"> => {
   switch (locale) {
     case "auto":
-      return "en";
+      return localeToTimezoneLabelId(window.navigator.language);
     case "en":
       return "en";
     case "ja":
