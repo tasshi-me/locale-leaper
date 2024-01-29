@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { ListItem } from "./ListItem.tsx";
+import { palette } from "../../designTokens/colors.ts";
 
 type Props<Item, Key extends string> = {
   className?: string;
@@ -50,9 +51,16 @@ const StyledComponent = styled(Component)`
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  border: 1px solid black;
+  border: 1px solid ${palette.common.transparent};
+  background: ${palette.dark.eerieBlack};
+  border-radius: 8px;
   overflow: scroll;
   ${({ maxHeight }) => (maxHeight ? `max-height: ${maxHeight}` : "")};
+
+  @media (prefers-color-scheme: light) {
+    border: 1px solid ${palette.common.transparent};
+    background: ${palette.light.ghostWhite};
+  }
 ` as typeof Component;
 
 export const List = StyledComponent;

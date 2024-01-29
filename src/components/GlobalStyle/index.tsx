@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { palette } from "../../designTokens/colors.ts";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -23,8 +24,8 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
 
         color-scheme: light dark;
-        color: rgba(255, 255, 255, 0.87);
-        background-color: #242424;
+        color: ${palette.dark.translucent};
+        background-color: ${palette.dark.raisinBlack};
 
         font-synthesis: none;
         text-rendering: optimizeLegibility;
@@ -44,12 +45,12 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         font-weight: 500;
-        color: #646cff;
+        color: ${palette.dark.veryLightBlue};
         text-decoration: inherit;
     }
 
     a:hover {
-        color: #535bf2;
+        color: ${palette.dark.ultramarineBlue};
     }
 
     h1 {
@@ -64,15 +65,15 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1em;
         font-weight: 500;
         font-family: inherit;
-        background-color: #1a1a1a;
+        background-color: ${palette.dark.eerieBlack};
         cursor: pointer;
         /*transition: border-color 0.25s, background-color 0.25s;*/
         width: 100%;
     }
 
     button:hover {
-        border-color: #646cff;
-        background: #646cff;
+        border-color: ${palette.dark.veryLightBlue};
+        background: ${palette.dark.veryLightBlue};
     }
 
     button:focus,
@@ -82,16 +83,21 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (prefers-color-scheme: light) {
         :root {
-            color: #213547;
-            background-color: #ffffff;
+            color: ${palette.light.japaneseIndigo};
+            background-color: ${palette.light.white};
         }
 
         a:hover {
-            color: #747bff;
+            color: ${palette.light.veryLightBlue};
         }
 
         button {
-            background-color: #f9f9f9;
+            background-color: ${palette.light.ghostWhite};
+        }
+
+        button:hover {
+            border-color: ${palette.light.veryLightBlue};
+            background: ${palette.light.veryLightBlue};
         }
     }
 `;

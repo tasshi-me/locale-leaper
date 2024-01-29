@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
+import { palette } from "../../designTokens/colors.ts";
 
 type Props<Item, Key extends string> = {
   className?: string;
@@ -36,15 +37,22 @@ const Component = <Item, Key extends string>({
 };
 
 const StyledComponent = styled(Component)`
-  width: ${({ itemsPerRow }) => `${itemsPerRow ? 100 / itemsPerRow : 100}%`};
-  list-style: none;
+    width: ${({ itemsPerRow }) => `${itemsPerRow ? 100 / itemsPerRow : 100}%`};
+    list-style: none;
     margin: 0;
-    
+
     button {
         width: 100%;
         height: 100%;
-        ${({ current }) => (current ? "border-color: #646cff;" : "")}};
+        ${({ current }) => (current ? `border-color: ${palette.dark.veryLightBlue};` : "")}
     }
+
+    @media (prefers-color-scheme: light) {
+        button {
+            ${({ current }) => (current ? `border-color: ${palette.light.veryLightBlue};` : "")}
+        }
+    }
+}
 ` as typeof Component;
 
 export const ListItem = StyledComponent;

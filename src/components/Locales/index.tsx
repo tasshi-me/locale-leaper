@@ -31,10 +31,4 @@ const Locales: React.FC<Props> = ({ callback }) => {
   );
 };
 
-// const LocaleComparator = (currentLocale: Locale)=> (t1: Locale, t2: Locale): number => {
-//   if(t1 === currentLocale) return -1
-//   if(t2 === currentLocale) return 1
-//   return 0
-// }
-
 export default Locales;

@@ -39,10 +39,4 @@ const Timezones: React.FC<Props> = ({ callback }) => {
   );
 };
 
-// const TimezoneComparator = (currentTimezone: Timezone) => (t1: Timezone, t2: Timezone): number => {
-//   if (t1 === currentTimezone) return -1
-//   if (t2 === currentTimezone) return 1
-//   return 0
-// }
-
 export default Timezones;

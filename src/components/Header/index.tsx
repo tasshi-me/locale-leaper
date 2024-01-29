@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "./Logo.tsx";
+import { palette } from "../../designTokens/colors.ts";
 
 type Props = {
   className?: string;
@@ -25,7 +26,7 @@ const StyledComponent = styled(Component)`
   display: flex;
   flex-direction: row;
   place-items: center stretch;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid ${palette.dark.eerieBlack};
 
   h1 {
     font-size: 1.6em;
@@ -34,8 +35,12 @@ const StyledComponent = styled(Component)`
   }
 
   p {
-    color: #888;
+    color: ${palette.common.taupeGray};
     padding-left: 1em;
+  }
+
+  @media (prefers-color-scheme: light) {
+    border-bottom: 1px solid ${palette.light.chineseSilver};
   }
 `;
 
