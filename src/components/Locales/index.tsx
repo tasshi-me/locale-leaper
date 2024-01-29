@@ -15,7 +15,7 @@ const Locales: React.FC<Props> = ({ callback }) => {
 
   return (
     <>
-      <h2>Locale</h2>
+      <h2>Language</h2>
       <List
         items={locales}
         createKey={createKey}
