@@ -20,8 +20,8 @@ dependencies:
 
 devDependencies:
   '@crxjs/vite-plugin':
-    specifier: 2.0.0-beta.21
-    version: 2.0.0-beta.21
+    specifier: 2.0.0-beta.23
+    version: 2.0.0-beta.23
   '@cybozu/eslint-config':
     specifier: ^22.0.2
     version: 22.0.2(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3)
@@ -313,8 +313,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@crxjs/vite-plugin@2.0.0-beta.21:
-    resolution: {integrity: sha512-kSXgHHqCXASqJ8NmY94+KLGVwdtkJ0E7KsRQ+vbMpRliJ5ze0xnSk0l41p4txlUysmEoqaeo4Xb7rEFdcU2zjQ==}
+  /@crxjs/vite-plugin@2.0.0-beta.23:
+    resolution: {integrity: sha512-AO+VYhtNZ1fITq/sc54FZpTtFvHR+gJwFGiWTGKs07bwYzzZFdF0sYeiFgZiEjaNkddkAzuM4F4lgOmCm69YUw==}
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@webcomponents/custom-elements': 1.6.0
@@ -5461,6 +5461,7 @@ packages:
 
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+    requiresBuild: true
     dev: true
 
   /write-file-atomic@3.0.3:
