@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^22.0.2
     version: 22.0.2(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3)
   '@kintone/dts-gen':
-    specifier: ^8.0.3
-    version: 8.0.5(typescript@5.3.3)
+    specifier: ^8.0.6
+    version: 8.0.6(typescript@5.3.3)
   '@types/chrome':
     specifier: ^0.0.254
     version: 0.0.254
@@ -704,8 +704,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kintone/dts-gen@8.0.5(typescript@5.3.3):
-    resolution: {integrity: sha512-l1XUzKPKW08Sok9ernBvt4RH2R7ZjjJVV6MTCoYuqOAl0R5E7K/bxHMOlq8EsrB3iw66oqGckCQ4Ffk9nNh5Bw==}
+  /@kintone/dts-gen@8.0.6(typescript@5.3.3):
+    resolution: {integrity: sha512-QpKV//7kZLVMSiepDPiPXiNqcq3aIKj1B6K029T8MBVauVNi2laNy0DnwRhCPC64rTuLvB1qFeIdKwXhgO+a+A==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
