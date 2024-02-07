@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^22.0.2
     version: 22.0.2(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3)
   '@kintone/dts-gen':
-    specifier: ^8.0.6
-    version: 8.0.6(typescript@5.3.3)
+    specifier: ^8.0.7
+    version: 8.0.7(typescript@5.3.3)
   '@types/chrome':
     specifier: ^0.0.254
     version: 0.0.254
@@ -351,6 +351,32 @@ packages:
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-node: 11.1.0(eslint@8.56.0)
       eslint-plugin-prettier: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.4)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
+      typescript: 5.3.3
+    transitivePeerDependencies:
+      - '@types/eslint'
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - prettier
+      - supports-color
+    dev: true
+
+  /@cybozu/eslint-config@22.0.2(eslint@8.56.0)(prettier@3.2.5)(typescript@5.3.3):
+    resolution: {integrity: sha512-Zyrq31EKJPCAdsg7qVX54Ni1CsvgmHKHHXsMED/Y8bFyVErZgvhDg7vpY94k+kolItQ6kssFYgcH1JFD63NIBw==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0
+      typescript: '>=4.2.4 || ^5.0.0'
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
+      eslint: 8.56.0
+      eslint-config-prettier: 9.1.0(eslint@8.56.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-node: 11.1.0(eslint@8.56.0)
+      eslint-plugin-prettier: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.5)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
       typescript: 5.3.3
@@ -704,18 +730,18 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kintone/dts-gen@8.0.6(typescript@5.3.3):
-    resolution: {integrity: sha512-QpKV//7kZLVMSiepDPiPXiNqcq3aIKj1B6K029T8MBVauVNi2laNy0DnwRhCPC64rTuLvB1qFeIdKwXhgO+a+A==}
+  /@kintone/dts-gen@8.0.7(typescript@5.3.3):
+    resolution: {integrity: sha512-nuROWuugpy0AbSOiH7Yr4DNGIg8IixmtHyaQXCaZbIXYjvks4PtMK81rhrYXXFzoUIB/zVyYUr7oeDJ2w6L/kw==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@cybozu/eslint-config': 22.0.2(eslint@8.56.0)(prettier@3.2.4)(typescript@5.3.3)
+      '@cybozu/eslint-config': 22.0.2(eslint@8.56.0)(prettier@3.2.5)(typescript@5.3.3)
       axios: 1.6.7
       commander: 11.1.0
       eslint: 8.56.0
       form-data: 4.0.0
       lodash: 4.17.21
-      prettier: 3.2.4
+      prettier: 3.2.5
     transitivePeerDependencies:
       - '@types/eslint'
       - debug
@@ -2361,6 +2387,27 @@ packages:
       eslint: 8.56.0
       eslint-config-prettier: 9.1.0(eslint@8.56.0)
       prettier: 3.2.4
+      prettier-linter-helpers: 1.0.0
+      synckit: 0.8.8
+    dev: true
+
+  /eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.5):
+    resolution: {integrity: sha512-C9GCVAs4Eq7ZC/XFQHITLiHJxQngdtraXaM+LoUFoFp/lHNl2Zn8f3WQbe9HvTBBQ9YnKFB0/2Ajdqwo5D1EAw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      '@types/eslint': '>=8.0.0'
+      eslint: '>=8.0.0'
+      eslint-config-prettier: '*'
+      prettier: '>=3.0.0'
+    peerDependenciesMeta:
+      '@types/eslint':
+        optional: true
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.56.0
+      eslint-config-prettier: 9.1.0(eslint@8.56.0)
+      prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.8
     dev: true
@@ -4203,6 +4250,12 @@ packages:
 
   /prettier@3.2.4:
     resolution: {integrity: sha512-FWu1oLHKCrtpO1ypU6J0SbK2d9Ckwysq6bHj/uaCP26DxrPpppCLQRGVuqAxSTvhF00AcvDRyYrLNW7ocBhFFQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
