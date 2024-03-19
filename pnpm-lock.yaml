@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^22.0.2
     version: 22.0.2(eslint@8.57.0)(prettier@3.2.4)(typescript@5.4.2)
   '@kintone/dts-gen':
-    specifier: ^8.0.7
-    version: 8.0.7(typescript@5.4.2)
+    specifier: ^8.0.8
+    version: 8.0.8(typescript@5.4.2)
   '@types/chrome':
     specifier: ^0.0.254
     version: 0.0.254
@@ -745,13 +745,13 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kintone/dts-gen@8.0.7(typescript@5.4.2):
-    resolution: {integrity: sha512-nuROWuugpy0AbSOiH7Yr4DNGIg8IixmtHyaQXCaZbIXYjvks4PtMK81rhrYXXFzoUIB/zVyYUr7oeDJ2w6L/kw==}
+  /@kintone/dts-gen@8.0.8(typescript@5.4.2):
+    resolution: {integrity: sha512-4fnacwPYVPJnrmEbE4I2LmK8ea0Jah6MfzxLNViT7s8vm97PB3iEm1JosLD+sYn1CXF547kmgrVyMNg6KNBFTQ==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
       '@cybozu/eslint-config': 22.0.2(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.2)
-      axios: 1.6.7
+      axios: 1.6.8
       commander: 11.1.0
       eslint: 8.57.0
       form-data: 4.0.0
@@ -1557,10 +1557,10 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios@1.6.7:
-    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
+  /axios@1.6.8:
+    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
     dependencies:
-      follow-redirects: 1.15.5
+      follow-redirects: 1.15.6
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -2904,8 +2904,8 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /follow-redirects@1.15.5:
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
+  /follow-redirects@1.15.6:
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
