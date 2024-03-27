@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^22.0.2
     version: 22.0.2(eslint@8.57.0)(prettier@3.2.4)(typescript@5.4.3)
   '@kintone/dts-gen':
-    specifier: ^8.0.8
-    version: 8.0.8(typescript@5.4.3)
+    specifier: ^8.0.9
+    version: 8.0.9(typescript@5.4.3)
   '@types/chrome':
     specifier: ^0.0.254
     version: 0.0.254
@@ -745,14 +745,14 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kintone/dts-gen@8.0.8(typescript@5.4.3):
-    resolution: {integrity: sha512-4fnacwPYVPJnrmEbE4I2LmK8ea0Jah6MfzxLNViT7s8vm97PB3iEm1JosLD+sYn1CXF547kmgrVyMNg6KNBFTQ==}
+  /@kintone/dts-gen@8.0.9(typescript@5.4.3):
+    resolution: {integrity: sha512-9Srt6z6DhxkcswtqPbOdWoqEYJlDRBpjEdqF33PbA/olAD3m+hBq7ds+5Mnu6Cw4lIWcmDMPxxj4lLncDcDDng==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
       '@cybozu/eslint-config': 22.0.2(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.3)
       axios: 1.6.8
-      commander: 11.1.0
+      commander: 12.0.0
       eslint: 8.57.0
       form-data: 4.0.0
       lodash: 4.17.21
@@ -1836,9 +1836,9 @@ packages:
       delayed-stream: 1.0.0
     dev: true
 
-  /commander@11.1.0:
-    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
-    engines: {node: '>=16'}
+  /commander@12.0.0:
+    resolution: {integrity: sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==}
+    engines: {node: '>=18'}
     dev: true
 
   /commander@2.20.3:
