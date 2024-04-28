@@ -49,6 +49,11 @@ const StyledComponent = styled(Component)`
   :first-child {
     place-self: center start;
   }
+
+  :nth-child(2) {
+    font-weight: bold;
+  }
+
   :last-child {
     place-self: center end;
   }

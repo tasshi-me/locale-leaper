@@ -14,7 +14,6 @@ const Component: React.FC<Props> = ({ className, visible, callback }) => {
         className={className}
         onClick={async () => {
           await chrome.tabs.reload();
-          // window.location.reload()
           callback();
         }}
       >
@@ -26,7 +25,26 @@ const Component: React.FC<Props> = ({ className, visible, callback }) => {
 
 const StyledComponent = styled(Component)`
   background: dodgerblue;
-  border-color: deepskyblue;
+  border-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+
+  margin: 0.5em 0;
+
+  &:hover {
+    background: #1975ce;
+    border-color: #1975ce;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: deepskyblue;
+    border-color: deepskyblue;
+    &:hover {
+      background: #0bace1;
+      border-color: #0bace1;
+    }
+  }
 `;
 
 export const Reload = StyledComponent as typeof Component;

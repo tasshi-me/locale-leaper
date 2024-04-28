@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Logo } from "./Logo.tsx";
 import { palette } from "../../designTokens/colors.ts";
+import { AiOutlineGlobal, AiOutlineGithub } from "react-icons/ai";
 
 type Props = {
   className?: string;
@@ -10,18 +10,29 @@ type Props = {
 const Component: React.FC<Props> = ({ className }) => {
   return (
     <header className={className}>
-      <a href="https://react.dev" target="_blank" rel="noreferrer">
-        <Logo />
-      </a>
+      {/* <Logo />*/}
+      <AiOutlineGlobal color="skyblue" size="2em" />
       <h1>LocaleLeaper</h1>
-      <p className="read-the-docs">Click to change the locale 🌏</p>
+      <p className="read-the-docs">for kintone</p>
+
+      <div className="links">
+        <a
+          href="https://github.com/mshrtsr/locale-leaper"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          <AiOutlineGithub size="2em" />
+        </a>
+        {/* <AiOutlineSetting size="2em" />*/}
+      </div>
     </header>
   );
 };
 
 const StyledComponent = styled(Component)`
   width: 100%;
-  padding: 0.3em;
+  padding: 0.3em 1em;
   height: 3em;
   display: flex;
   flex-direction: row;
@@ -36,7 +47,11 @@ const StyledComponent = styled(Component)`
 
   p {
     color: ${palette.common.taupeGray};
-    padding-left: 1em;
+    padding-left: 0.5em;
+  }
+
+  .links {
+    margin-left: auto;
   }
 
   @media (prefers-color-scheme: light) {

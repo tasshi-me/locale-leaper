@@ -7,6 +7,8 @@ import {
 } from "../../utils/timezone.ts";
 import { useLocale, useTimezone } from "../../utils/hooks.ts";
 import { TimezoneLabel } from "./TimezoneLabel.tsx";
+import { AiOutlineEnvironment } from "react-icons/ai";
+import { TextWithIcon } from "../TextWithIcon";
 
 type Props = {
   callback: (timezone: Timezone) => void;
@@ -25,7 +27,9 @@ const Timezones: React.FC<Props> = ({ callback }) => {
   const createKey = (t: (typeof timezones)[number]): Timezone => t.id;
   return (
     <>
-      <h2>Timezone</h2>
+      <h2>
+        <TextWithIcon icon={AiOutlineEnvironment}>Timezone</TextWithIcon>
+      </h2>
       <List
         items={timezones}
         createLabel={createLabel}
