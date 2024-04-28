@@ -16,6 +16,12 @@ const manifest = (mode: string) =>
     version: `${major}.${minor}.${patch}.${label}`,
     version_name: version,
     description: "The browser extension to switch locale on kintone",
+    // https://developer.chrome.com/docs/extensions/reference/manifest/icons
+    icons: {
+      "16": "icons/locale-leaper-logo_16.png",
+      "48": "icons/locale-leaper-logo_48.png",
+      "128": "icons/locale-leaper-logo_128.png",
+    },
     action: {
       default_title: "LocaleLeaper - Click to change the locale",
       default_popup: "index.html",

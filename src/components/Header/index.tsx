@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { palette } from "../../designTokens/colors.ts";
-import { AiOutlineGlobal, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+import { Logo } from "./Logo.tsx";
 
 type Props = {
   className?: string;
@@ -10,8 +11,7 @@ type Props = {
 const Component: React.FC<Props> = ({ className }) => {
   return (
     <header className={className}>
-      {/* <Logo />*/}
-      <AiOutlineGlobal color="skyblue" size="2em" />
+      <Logo />
       <h1>LocaleLeaper</h1>
       <p className="read-the-docs">for kintone</p>
 
@@ -22,7 +22,6 @@ const Component: React.FC<Props> = ({ className }) => {
           target="_blank"
           rel="noreferrer"
         >
-          {" "}
           <AiOutlineGithub size="2em" />
         </a>
         {/* <AiOutlineSetting size="2em" />*/}

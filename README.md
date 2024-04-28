@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="" target="_blank" rel="noopener noreferrer">
+    <img width="128" src="icons/locale-leaper-logo.svg" alt="LocaleLeaper logo">
+  </a>
+</p>
+
 ## LocaleLeaper :earth_asia:
 
 > "LocaleLeaper"という名前は、「ロケール（地域や言語設定）を跳び越える者」を意味します。これは、ユーザーが簡単に異なる地域設定や言語設定に切り替えることができる、という機能を象徴しています。また、時間帯の切り替えも含む場合、時間的な距離も跳び越えるという意味合いも含まれます。

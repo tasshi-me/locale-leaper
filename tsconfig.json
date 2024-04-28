@@ -24,6 +24,7 @@
     "src/**/*",
     "public/js/**/*",
     "./node_modules/@kintone/dts-gen/kintone.d.ts",
+    "vite.config.mts",
   ],
   "references": [{ "path": "./tsconfig.node.json" }],
 }
