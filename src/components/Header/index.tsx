@@ -17,6 +17,7 @@ const Component: React.FC<Props> = ({ className }) => {
 
       <div className="links">
         <a
+          className="link-github"
           href="https://github.com/mshrtsr/locale-leaper"
           target="_blank"
           rel="noreferrer"
@@ -41,17 +42,24 @@ const StyledComponent = styled(Component)`
 
   h1 {
     font-size: 1.6em;
-    //padding-left: 0.2em;
-    padding-right: 0.2em;
+    padding: 0 0.2em;
   }
 
   p {
     color: ${palette.common.taupeGray};
-    padding-left: 0.5em;
+    padding: 0 0.2em;
   }
 
   .links {
     margin-left: auto;
+
+    .link-github {
+      color: ${palette.dark.translucent};
+
+      @media (prefers-color-scheme: light) {
+        color: ${palette.light.japaneseIndigo};
+      }
+    }
   }
 
   @media (prefers-color-scheme: light) {
