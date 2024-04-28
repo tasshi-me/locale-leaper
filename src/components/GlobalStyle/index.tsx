@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         /* https://groups.google.com/a/chromium.org/g/chromium-extensions/c/3A8d3oiOV_E?pli=1 */
         min-width: 640px;
-        min-height: 100vh;
+        //min-height: 100vh;
         max-width: 800px;
         max-height: 600px;
     }
