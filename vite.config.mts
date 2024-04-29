@@ -12,10 +12,16 @@ const [major, minor, patch, label = "0"] = version
 const manifest = (mode: string) =>
   defineManifest({
     manifest_version: 3,
-    name: mode === "development" ? "[INTERNAL] LocaleLeaper" : "LocaleLeaper",
+    name:
+      mode === "development"
+        ? "[INTERNAL] LocaleLeaper for kintone"
+        : "LocaleLeaper for kintone",
+    short_name: "LocaleLeaper",
     version: `${major}.${minor}.${patch}.${label}`,
     version_name: version,
     description: "The browser extension to switch locale on kintone",
+    homepage_url:
+      "https://github.com/tasshi-me/locale-leaper?tab=readme-ov-file#overview",
     // https://developer.chrome.com/docs/extensions/reference/manifest/icons
     icons: {
       "16": "icons/locale-leaper-logo_16.png",
