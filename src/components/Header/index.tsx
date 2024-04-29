@@ -12,7 +12,10 @@ const Component: React.FC<Props> = ({ className }) => {
   return (
     <header className={className}>
       <Logo />
-      <h1>LocaleLeaper</h1>
+      <h1>
+        <span className="l-colored">L</span>ocale
+        <span className="l-colored">L</span>eaper
+      </h1>
       <p className="read-the-docs">for kintone</p>
 
       <div className="links">
@@ -42,6 +45,10 @@ const StyledComponent = styled(Component)`
   h1 {
     font-size: 1.6em;
     padding: 0 0.2em;
+  }
+
+  .l-colored {
+    color: ${palette.common.earth};
   }
 
   p {

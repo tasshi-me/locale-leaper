@@ -3,6 +3,7 @@ export const palette = {
   common: {
     transparent: "transparent",
     taupeGray: "#888888",
+    earth: "#00C6AE",
   },
   dark: {
     translucent: "rgba(255, 255, 255, 0.87)",
