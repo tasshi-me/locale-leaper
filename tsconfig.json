@@ -18,13 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src/**/*",
     "public/js/**/*",
     "./node_modules/@kintone/dts-gen/kintone.d.ts",
-    "vite.config.mts",
+    "vite.config.mts"
   ],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
