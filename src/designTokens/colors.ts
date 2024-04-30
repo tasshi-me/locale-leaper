@@ -3,19 +3,19 @@ export const palette = {
   common: {
     transparent: "transparent",
     taupeGray: "#888888",
-    earth: "#00C6AE",
+    tiffanyBlue: "#00C6AE",
   },
   dark: {
     translucent: "rgba(255, 255, 255, 0.87)",
     raisinBlack: "#242424",
-    veryLightBlue: "#646cff",
+    paoloVeroneseGreen: "#009281",
     ultramarineBlue: "#535bf2",
     eerieBlack: "#1a1a1a",
   },
   light: {
     japaneseIndigo: "#213547",
     white: "#ffffff",
-    veryLightBlue: "#747bff",
+    persianGreen: "#00B6A0",
     ghostWhite: "#f9f9f9",
     chineseSilver: "#CCCCCC",
   },

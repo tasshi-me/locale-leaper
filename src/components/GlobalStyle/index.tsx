@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         font-weight: 500;
-        color: ${palette.dark.veryLightBlue};
+        color: ${palette.dark.paoloVeroneseGreen};
         text-decoration: inherit;
     }
 
@@ -72,13 +72,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     button:hover {
-        border-color: ${palette.dark.veryLightBlue};
-        background: ${palette.dark.veryLightBlue};
+        border-color: ${palette.dark.paoloVeroneseGreen};
+        background: ${palette.dark.paoloVeroneseGreen};
     }
 
     button:focus,
     button:focus-visible {
-        outline: 4px auto -webkit-focus-ring-color;
+        outline: 4px auto ${palette.dark.paoloVeroneseGreen};
     }
 
     @media (prefers-color-scheme: light) {
@@ -88,7 +88,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         a:hover {
-            color: ${palette.light.veryLightBlue};
+            color: ${palette.light.persianGreen};
         }
 
         button {
@@ -96,8 +96,13 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         button:hover {
-            border-color: ${palette.light.veryLightBlue};
-            background: ${palette.light.veryLightBlue};
+            border-color: ${palette.light.persianGreen};
+            background: ${palette.light.persianGreen};
+        }
+
+        button:focus,
+        button:focus-visible {
+            outline: 4px auto ${palette.light.persianGreen};
         }
     }
 `;

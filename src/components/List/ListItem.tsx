@@ -44,12 +44,12 @@ const StyledComponent = styled(Component)`
     button {
         width: 100%;
         height: 100%;
-        ${({ current }) => (current ? `border-color: ${palette.dark.veryLightBlue};` : "")}
+        ${({ current }) => (current ? `border-color: ${palette.dark.paoloVeroneseGreen};` : "")}
     }
 
     @media (prefers-color-scheme: light) {
         button {
-            ${({ current }) => (current ? `border-color: ${palette.light.veryLightBlue};` : "")}
+            ${({ current }) => (current ? `border-color: ${palette.light.persianGreen};` : "")}
         }
     }
 }

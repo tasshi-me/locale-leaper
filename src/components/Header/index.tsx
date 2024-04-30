@@ -13,8 +13,8 @@ const Component: React.FC<Props> = ({ className }) => {
     <header className={className}>
       <Logo />
       <h1>
-        <span className="l-colored">L</span>ocale
-        <span className="l-colored">L</span>eaper
+        <span className="letter-colored">L</span>ocale
+        <span className="letter-colored">L</span>eaper
       </h1>
       <p className="read-the-docs">for kintone</p>
 
@@ -47,8 +47,8 @@ const StyledComponent = styled(Component)`
     padding: 0 0.2em;
   }
 
-  .l-colored {
-    color: ${palette.common.earth};
+  .letter-colored {
+    color: ${palette.common.tiffanyBlue};
   }
 
   p {
