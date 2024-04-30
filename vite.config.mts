@@ -20,8 +20,7 @@ const manifest = (mode: string) =>
     version: `${major}.${minor}.${patch}.${label}`,
     version_name: version,
     description: "The browser extension to switch locale on kintone",
-    homepage_url:
-      "https://github.com/tasshi-me/locale-leaper?tab=readme-ov-file#overview",
+    homepage_url: "https://github.com/tasshi-me/locale-leaper#readme",
     // https://developer.chrome.com/docs/extensions/reference/manifest/icons
     icons: {
       "16": "icons/locale-leaper-logo_16.png",

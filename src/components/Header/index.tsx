@@ -21,7 +21,7 @@ const Component: React.FC<Props> = ({ className }) => {
       <div className="links">
         <a
           className="link-github"
-          href="https://github.com/mshrtsr/locale-leaper"
+          href="https://github.com/tasshi-me/locale-leaper#readme"
           target="_blank"
           rel="noreferrer"
         >
