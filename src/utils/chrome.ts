@@ -99,6 +99,9 @@ export const sendRequestToKintone = async <Data>(params: {
     args: [params],
   });
   const result = results[0].result;
+  if (result === undefined) {
+    throw new Error(`Failed to request to kintone: undefined`);
+  }
   if ("error" in result) {
     throw new Error(`Failed to request to kintone: ${result.error}`);
   }
