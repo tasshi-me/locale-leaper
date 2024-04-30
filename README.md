@@ -2,9 +2,9 @@
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck" target="_blank" rel="noopener noreferrer">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="icons/locale-leaper-logo-large-dark.svg" width="512">
-        <source media="(prefers-color-scheme: light)" srcset="icons/locale-leaper-logo-large.svg" width="512">
-        <img alt="Banner of LocaleLeaper" src="icons/locale-leaper-logo-large.svg" width="512">
+        <source media="(prefers-color-scheme: dark)" srcset="icons/locale-leaper-banner-dark.svg" width="512">
+        <source media="(prefers-color-scheme: light)" srcset="icons/locale-leaper-banner.svg" width="512">
+        <img alt="Banner of LocaleLeaper" src="icons/locale-leaper-banner.svg" width="512">
     </picture>
   </a>
 </p>
