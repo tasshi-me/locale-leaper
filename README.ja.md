@@ -11,7 +11,7 @@
 
 <p align="center">
   <!-- https://developer.chrome.com/docs/webstore/branding?hl=ja -->
-  <a href="https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="Chrome Web Store"></a>
+  <a href="https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck" target="_blank" rel="noopener noreferrer"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="Chrome Web Store"></a>
 </p>
 
 <div align="center">
