@@ -24,6 +24,28 @@ English | [日本語](./README.ja.md)
 
 > Leap the languages and time zones!
 
+With the LocaleLeaper, you can quickly switch the language and timezone of [kintone](https://www.kintone.com/en-us/).
+
+This browser extension is perfect for working with different languages/timezone members or testing the kintone plugin/customization.
+
+## Installation
+
+Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck).
+
+<a href="https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck" target="_blank" rel="noopener noreferrer"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="Chrome Web Store"></a>
+
+or download a zip file from the [Releases](https://github.com/tasshi-me/locale-leaper/releases).
+
+## Usage
+
+Click the extension icon, and choose the language/timezone to set.
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="icons/store-screenshot_en_dark.png" width="800">
+    <source media="(prefers-color-scheme: light)" srcset="icons/store-screenshot_en_light.png" width="800">
+    <img alt="Banner of LocaleLeaper" src="icons/store-screenshot_en_light.png">
+</picture>
+
 ## License
 
 This project is licensed under the [MIT license](./LICENSE).
