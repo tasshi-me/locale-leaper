@@ -2,7 +2,7 @@
   "name": "locale-leaper",
   "private": true,
   "type": "module",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "The browser extension to switch locale on kintone",
   "scripts": {
     "dev": "vite",
