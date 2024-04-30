@@ -16,14 +16,16 @@
 
 <div align="center">
 
-English | [日本語](./README.ja.md)
+[English](./README.md) | 日本語
 
 </div>
 
-## Overview
+## 概要
 
-> Leap the languages and time zones!
+> "LocaleLeaper"という名前は、「ロケール（地域や言語設定）を跳び越える者」を意味します。これは、ユーザーが簡単に異なる地域設定や言語設定に切り替えることができる、という機能を象徴しています。また、時間帯の切り替えも含む場合、時間的な距離も跳び越えるという意味合いも含まれます。
+>
+> \- GPT-4
 
-## License
+## ライセンス
 
 This project is licensed under the [MIT license](./LICENSE).
