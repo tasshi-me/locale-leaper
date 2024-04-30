@@ -1,21 +1,33 @@
+const supportedUrls = [
+  "https://*.cybozu.com/k/*",
+  "https://*.cybozu.com/g/*",
+  "https://*.cybozu-dev.com/k/*",
+  "https://*.cybozu-dev.com/g/*",
+  "https://*.kintone.com/k/*",
+  "https://*.kintone.com/g/*",
+  "https://*.kintone-dev.com/k/*",
+  "https://*.kintone-dev.com/g/*",
+  "https://*.cybozu.cn/k/*",
+  "https://*.cybozu.cn/g/*",
+  "https://*.cybozu-dev.cn/k/*",
+  "https://*.cybozu-dev.cn/g/*",
+];
+
+export const isSupportedPage = async () => {
+  const tabs = await chrome.tabs.query({
+    active: true,
+    currentWindow: true,
+    url: supportedUrls,
+  });
+  const tabId = tabs.at(0)?.id;
+  return tabId !== undefined;
+};
+
 export const getTabId = async () => {
   const tabs = await chrome.tabs.query({
     active: true,
     currentWindow: true,
-    url: [
-      "https://*.cybozu.com/k/*",
-      "https://*.cybozu.com/g/*",
-      "https://*.cybozu-dev.com/k/*",
-      "https://*.cybozu-dev.com/g/*",
-      "https://*.kintone.com/k/*",
-      "https://*.kintone.com/g/*",
-      "https://*.kintone-dev.com/k/*",
-      "https://*.kintone-dev.com/g/*",
-      "https://*.cybozu.cn/k/*",
-      "https://*.cybozu.cn/g/*",
-      "https://*.cybozu-dev.cn/k/*",
-      "https://*.cybozu-dev.cn/g/*",
-    ],
+    url: supportedUrls,
   });
   const tabId = tabs.at(0)?.id;
   if (tabId === undefined) {

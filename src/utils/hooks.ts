@@ -7,7 +7,7 @@ import {
   updateTimezone,
   getUser,
 } from "./fetchers.ts";
-import { getTabId } from "./chrome.ts";
+import { getTabId, isSupportedPage } from "./chrome.ts";
 import { Timezone } from "./timezone.ts";
 
 type Hook<S, Label extends string> = () => { [key in Label]: S };
@@ -17,6 +17,13 @@ type HookWithMutate<S, Label extends string> = () => {
 
 export const reloadTab = async () => {
   await chrome.tabs.reload();
+};
+
+export const useSupportedPage: Hook<boolean, "supportedPage"> = () => {
+  const { data: supportedPage } = useSWR("supportedPage", isSupportedPage, {
+    suspense: true,
+  });
+  return { supportedPage: supportedPage };
 };
 
 export const useTabId: Hook<number, "tabId"> = () => {

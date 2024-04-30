@@ -6,9 +6,23 @@ import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Header } from "./components/Header";
 import { Card } from "./components/Card";
 import { GlobalStyle } from "./components/GlobalStyle";
+import { useSupportedPage } from "./utils/hooks.ts";
+import { Unsupported } from "./components/Unsupported";
 
 const App: React.FC = () => {
   const [reloadRequired, setReloadRequired] = useState<boolean>(false);
+
+  const { supportedPage } = useSupportedPage();
+
+  if (!supportedPage) {
+    return (
+      <>
+        <GlobalStyle />
+        <Header />
+        <Unsupported />
+      </>
+    );
+  }
 
   return (
     <>
