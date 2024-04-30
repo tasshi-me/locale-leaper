@@ -27,3 +27,7 @@ English | [日本語](./README.ja.md)
 ## License
 
 This project is licensed under the [MIT license](./LICENSE).
+
+## Disclaimer
+
+This OSS is my own personal work and does not have any relationship with Cybozu Inc. or any other organization to which I belong.
