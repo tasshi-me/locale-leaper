@@ -1,6 +1,6 @@
 <div id="readme"></div>
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck" target="_blank" rel="noopener noreferrer">
+  <a href="https://chromewebstore.google.com/detail/cofjdblceejmaggjlbjhbdepgmnegiek" target="_blank" rel="noopener noreferrer">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="icons/locale-leaper-banner-dark.svg" width="512">
         <source media="(prefers-color-scheme: light)" srcset="icons/locale-leaper-banner.svg" width="512">
@@ -11,7 +11,7 @@
 
 <p align="center">
   <!-- https://developer.chrome.com/docs/webstore/branding?hl=ja -->
-  <a href="https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck" target="_blank" rel="noopener noreferrer"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="Chrome Web Store"></a>
+  <a href="https://chromewebstore.google.com/detail/cofjdblceejmaggjlbjhbdepgmnegiek" target="_blank" rel="noopener noreferrer"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="Chrome Web Store"></a>
 </p>
 
 <div align="center">
@@ -33,9 +33,9 @@ LocaleLeaperは、[kintone](https://kintone.cybozu.co.jp/)の表示言語・タ�
 
 ## インストール
 
-[chrome ウェブストア](https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck)からインストールしてください。
+[chrome ウェブストア](https://chromewebstore.google.com/detail/cofjdblceejmaggjlbjhbdepgmnegiek)からインストールしてください。
 
-<a href="https://chromewebstore.google.com/detail/adpfpbogonofdljjmipfpheknmadjdck" target="_blank" rel="noopener noreferrer"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="chrome ウェブストア"></a>
+<a href="https://chromewebstore.google.com/detail/cofjdblceejmaggjlbjhbdepgmnegiek" target="_blank" rel="noopener noreferrer"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="chrome ウェブストア"></a>
 
 または、[Releases (英語)](https://github.com/tasshi-me/locale-leaper/releases)からZIPファイルをダウンロードしてください。
 
