@@ -31,8 +31,8 @@ importers:
         specifier: ^23.0.0
         version: 23.0.0(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
       '@kintone/dts-gen':
-        specifier: ^8.0.10
-        version: 8.0.10(typescript@5.4.5)
+        specifier: ^8.0.11
+        version: 8.0.11(typescript@5.4.5)
       '@types/chrome':
         specifier: ^0.0.268
         version: 0.0.268
@@ -417,8 +417,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.22':
     resolution: {integrity: sha512-Wf963MzWtA2sjrNt+g18IAln9lKnlRp+K2eH4jjIoF1wYeq3aMREpG09xhlhdzS0EjwU7qmUJYangWa+151vZw==}
 
-  '@kintone/dts-gen@8.0.10':
-    resolution: {integrity: sha512-EvL5cXGfvV68gHoptZ0r+VW4HNKranCKYsJC8jrDTnOeVTXDbzkWGX180k9sXmwUwIjywu9DWK2tvWbpZZD5IA==}
+  '@kintone/dts-gen@8.0.11':
+    resolution: {integrity: sha512-6hIA6POJ08R2CRJBsGeNwtxXApLQK/4x60DEhjakCnsJ7p4TROy403mHPvCENTgrLq7ixmoywV/UhEnVap7Bsg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3441,7 +3441,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@kintone/dts-gen@8.0.10(typescript@5.4.5)':
+  '@kintone/dts-gen@8.0.11(typescript@5.4.5)':
     dependencies:
       '@cybozu/eslint-config': 23.0.0(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
       axios: 1.6.8
