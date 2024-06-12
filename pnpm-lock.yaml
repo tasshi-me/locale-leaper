@@ -31,8 +31,8 @@ importers:
         specifier: ^23.0.0
         version: 23.0.0(eslint@8.57.0)(prettier@3.3.2)(typescript@5.4.5)
       '@kintone/dts-gen':
-        specifier: ^8.0.11
-        version: 8.0.11(typescript@5.4.5)
+        specifier: ^8.0.12
+        version: 8.0.12(typescript@5.4.5)
       '@types/chrome':
         specifier: ^0.0.268
         version: 0.0.268
@@ -415,8 +415,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@kintone/dts-gen@8.0.11':
-    resolution: {integrity: sha512-6hIA6POJ08R2CRJBsGeNwtxXApLQK/4x60DEhjakCnsJ7p4TROy403mHPvCENTgrLq7ixmoywV/UhEnVap7Bsg==}
+  '@kintone/dts-gen@8.0.12':
+    resolution: {integrity: sha512-omHkzvcf9wdtdaWkhCzW/fkS3YP0pp+ckAjHePEaEA7CSkjzuFsNcSlijQ/O2qQjkSb99ZQ6gOSVeYXmGUMVFA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -757,8 +757,8 @@ packages:
     resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
     engines: {node: '>=4'}
 
-  axios@1.6.8:
-    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
+  axios@1.7.2:
+    resolution: {integrity: sha512-2A8QhOMrbomlDuiLeK9XibIBzuHeRcqqNOHp0Cyp5EoJ1IFDh+XZH3A6BkXtv0K4gFGCI0Y4BM7B1wOEi0Rmgw==}
 
   axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
@@ -907,8 +907,8 @@ packages:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
     engines: {node: '>= 0.8'}
 
-  commander@12.0.0:
-    resolution: {integrity: sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==}
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
     engines: {node: '>=18'}
 
   commander@2.20.3:
@@ -2385,6 +2385,10 @@ packages:
   q@1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
 
   qs@6.5.3:
     resolution: {integrity: sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==}
@@ -3433,11 +3437,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@kintone/dts-gen@8.0.11(typescript@5.4.5)':
+  '@kintone/dts-gen@8.0.12(typescript@5.4.5)':
     dependencies:
       '@cybozu/eslint-config': 23.0.0(eslint@8.57.0)(prettier@3.3.2)(typescript@5.4.5)
-      axios: 1.6.8
-      commander: 12.0.0
+      axios: 1.7.2
+      commander: 12.1.0
       eslint: 8.57.0
       form-data: 4.0.0
       lodash: 4.17.21
@@ -3858,7 +3862,7 @@ snapshots:
 
   axe-core@4.7.0: {}
 
-  axios@1.6.8:
+  axios@1.7.2:
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -4037,7 +4041,7 @@ snapshots:
     dependencies:
       delayed-stream: 1.0.0
 
-  commander@12.0.0: {}
+  commander@12.1.0: {}
 
   commander@2.20.3: {}
 
