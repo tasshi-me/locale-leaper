@@ -25,8 +25,8 @@ importers:
         version: 2.2.5(react@18.3.1)
     devDependencies:
       '@crxjs/vite-plugin':
-        specifier: 2.0.0-beta.23
-        version: 2.0.0-beta.23
+        specifier: 2.0.0-beta.25
+        version: 2.0.0-beta.25
       '@cybozu/eslint-config':
         specifier: ^23.0.0
         version: 23.0.0(eslint@8.57.0)(prettier@3.3.2)(typescript@5.4.5)
@@ -194,8 +194,8 @@ packages:
     resolution: {integrity: sha512-6mQNsaLeXTw0nxYUYu+NSa4Hx4BlF1x1x8/PMFbiR+GBSr+2DkECc69b8hgy2frEodNcvPffeH8YfWd3LI6jhQ==}
     engines: {node: '>=6.9.0'}
 
-  '@crxjs/vite-plugin@2.0.0-beta.23':
-    resolution: {integrity: sha512-AO+VYhtNZ1fITq/sc54FZpTtFvHR+gJwFGiWTGKs07bwYzzZFdF0sYeiFgZiEjaNkddkAzuM4F4lgOmCm69YUw==}
+  '@crxjs/vite-plugin@2.0.0-beta.25':
+    resolution: {integrity: sha512-g5ytTNiFpFCi+T0trSDJLohVz5PufLBLh6OGljyGTHkQCKiApuEgZ1bAjgPXluMDhMUvbPfZT10LYl5ROefXog==}
 
   '@cybozu/eslint-config@23.0.0':
     resolution: {integrity: sha512-xfQVq794pcSDi+q2T5Y83lQuFZQSiEGt8xW0zL8vEh+ux0SrpLzmIj4YFeBTVrZq6+HqnPSZfFRr09BlCSHObQ==}
@@ -3243,7 +3243,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.5
       to-fast-properties: 2.0.0
 
-  '@crxjs/vite-plugin@2.0.0-beta.23':
+  '@crxjs/vite-plugin@2.0.0-beta.25':
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@webcomponents/custom-elements': 1.6.0
