@@ -34,8 +34,8 @@ importers:
         specifier: ^8.0.13
         version: 8.0.13(typescript@5.4.5)
       '@types/chrome':
-        specifier: ^0.0.275
-        version: 0.0.275
+        specifier: ^0.0.276
+        version: 0.0.276
       '@types/react':
         specifier: ^18.3.11
         version: 18.3.11
@@ -501,8 +501,8 @@ packages:
   '@types/babel__traverse@7.20.5':
     resolution: {integrity: sha512-WXCyOcRtH37HAUkpXhUduaxdm82b4GSlyTqajXviN4EfiuPgNYR109xMCKvpl6zPIpua0DGlMEDCq+g8EdoheQ==}
 
-  '@types/chrome@0.0.275':
-    resolution: {integrity: sha512-A4CR6QEK4CwntU5KjNY4zqTlYzoBKH0+DYY8Bcn3SuV3vTy4Fb3ol4+o9E8sotp1WNXCCvQnHfW9oXUX6b6wlw==}
+  '@types/chrome@0.0.276':
+    resolution: {integrity: sha512-2r+RZzfyEvGaIBadCRmOUvWVHtEKHqO8MsHkJTEXqgFnF72pe7lfKZzOoCFh/An5+M+20ULCPofUWnwnlgrXUA==}
 
   '@types/filesystem@0.0.35':
     resolution: {integrity: sha512-1eKvCaIBdrD2mmMgy5dwh564rVvfEhZTWVQQGRNn0Nt4ZEnJ0C8oSUCzvMKRA4lGde5oEVo+q2MrTTbV/GHDCQ==}
@@ -3638,7 +3638,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.24.5
 
-  '@types/chrome@0.0.275':
+  '@types/chrome@0.0.276':
     dependencies:
       '@types/filesystem': 0.0.35
       '@types/har-format': 1.2.15
