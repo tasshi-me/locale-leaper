@@ -44,10 +44,10 @@ importers:
         version: 18.3.1
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.15.0
-        version: 8.15.0(@typescript-eslint/parser@8.14.0(eslint@8.57.1)(typescript@5.4.5))(eslint@8.57.1)(typescript@5.4.5)
+        version: 8.15.0(@typescript-eslint/parser@8.15.0(eslint@8.57.1)(typescript@5.4.5))(eslint@8.57.1)(typescript@5.4.5)
       '@typescript-eslint/parser':
-        specifier: ^8.14.0
-        version: 8.14.0(eslint@8.57.1)(typescript@5.4.5)
+        specifier: ^8.15.0
+        version: 8.15.0(eslint@8.57.1)(typescript@5.4.5)
       '@vitejs/plugin-react':
         specifier: ^4.3.3
         version: 4.3.3(vite@4.0.5(@types/node@20.11.9))
@@ -642,8 +642,8 @@ packages:
       typescript:
         optional: true
 
-  '@typescript-eslint/parser@8.14.0':
-    resolution: {integrity: sha512-2p82Yn9juUJq0XynBXtFCyrBDb6/dJombnz6vbo6mgQEtWHfvHbQuEa9kAOVIt1c9YFwi7H6WxtPj1kg+80+RA==}
+  '@typescript-eslint/parser@8.15.0':
+    resolution: {integrity: sha512-7n59qFpghG4uazrF9qtGKBZXn7Oz4sOMm8dwNWDQY96Xlm2oX67eipqcblDj+oY1lLCbf1oltMZFpUso66Kl1A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
@@ -3700,8 +3700,8 @@ snapshots:
   '@cybozu/eslint-config@24.0.0-beta.0(eslint@9.14.0)(prettier@3.3.3)(typescript@5.4.5)':
     dependencies:
       '@stylistic/eslint-plugin-ts': 2.10.1(eslint@9.14.0)(typescript@5.4.5)
-      '@typescript-eslint/eslint-plugin': 8.15.0(@typescript-eslint/parser@8.14.0(eslint@8.57.1)(typescript@5.4.5))(eslint@9.14.0)(typescript@5.4.5)
-      '@typescript-eslint/parser': 8.14.0(eslint@9.14.0)(typescript@5.4.5)
+      '@typescript-eslint/eslint-plugin': 8.15.0(@typescript-eslint/parser@8.15.0(eslint@8.57.1)(typescript@5.4.5))(eslint@9.14.0)(typescript@5.4.5)
+      '@typescript-eslint/parser': 8.15.0(eslint@9.14.0)(typescript@5.4.5)
       eslint: 9.14.0
       eslint-config-prettier: 9.1.0(eslint@9.14.0)
       eslint-plugin-import-x: 3.1.0(eslint@9.14.0)(typescript@5.4.5)
@@ -4109,10 +4109,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/eslint-plugin@8.15.0(@typescript-eslint/parser@8.14.0(eslint@8.57.1)(typescript@5.4.5))(eslint@8.57.1)(typescript@5.4.5)':
+  '@typescript-eslint/eslint-plugin@8.15.0(@typescript-eslint/parser@8.15.0(eslint@8.57.1)(typescript@5.4.5))(eslint@8.57.1)(typescript@5.4.5)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 8.14.0(eslint@8.57.1)(typescript@5.4.5)
+      '@typescript-eslint/parser': 8.15.0(eslint@8.57.1)(typescript@5.4.5)
       '@typescript-eslint/scope-manager': 8.15.0
       '@typescript-eslint/type-utils': 8.15.0(eslint@8.57.1)(typescript@5.4.5)
       '@typescript-eslint/utils': 8.15.0(eslint@8.57.1)(typescript@5.4.5)
@@ -4127,10 +4127,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/eslint-plugin@8.15.0(@typescript-eslint/parser@8.14.0(eslint@8.57.1)(typescript@5.4.5))(eslint@9.14.0)(typescript@5.4.5)':
+  '@typescript-eslint/eslint-plugin@8.15.0(@typescript-eslint/parser@8.15.0(eslint@8.57.1)(typescript@5.4.5))(eslint@9.14.0)(typescript@5.4.5)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 8.14.0(eslint@8.57.1)(typescript@5.4.5)
+      '@typescript-eslint/parser': 8.15.0(eslint@8.57.1)(typescript@5.4.5)
       '@typescript-eslint/scope-manager': 8.15.0
       '@typescript-eslint/type-utils': 8.15.0(eslint@9.14.0)(typescript@5.4.5)
       '@typescript-eslint/utils': 8.15.0(eslint@9.14.0)(typescript@5.4.5)
@@ -4171,12 +4171,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.14.0(eslint@8.57.1)(typescript@5.4.5)':
+  '@typescript-eslint/parser@8.15.0(eslint@8.57.1)(typescript@5.4.5)':
     dependencies:
-      '@typescript-eslint/scope-manager': 8.14.0
-      '@typescript-eslint/types': 8.14.0
-      '@typescript-eslint/typescript-estree': 8.14.0(typescript@5.4.5)
-      '@typescript-eslint/visitor-keys': 8.14.0
+      '@typescript-eslint/scope-manager': 8.15.0
+      '@typescript-eslint/types': 8.15.0
+      '@typescript-eslint/typescript-estree': 8.15.0(typescript@5.4.5)
+      '@typescript-eslint/visitor-keys': 8.15.0
       debug: 4.3.4
       eslint: 8.57.1
     optionalDependencies:
@@ -4184,12 +4184,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.14.0(eslint@9.14.0)(typescript@5.4.5)':
+  '@typescript-eslint/parser@8.15.0(eslint@9.14.0)(typescript@5.4.5)':
     dependencies:
-      '@typescript-eslint/scope-manager': 8.14.0
-      '@typescript-eslint/types': 8.14.0
-      '@typescript-eslint/typescript-estree': 8.14.0(typescript@5.4.5)
-      '@typescript-eslint/visitor-keys': 8.14.0
+      '@typescript-eslint/scope-manager': 8.15.0
+      '@typescript-eslint/types': 8.15.0
+      '@typescript-eslint/typescript-estree': 8.15.0(typescript@5.4.5)
+      '@typescript-eslint/visitor-keys': 8.15.0
       debug: 4.3.4
       eslint: 9.14.0
     optionalDependencies:
