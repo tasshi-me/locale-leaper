@@ -34,7 +34,7 @@
     "@kintone/dts-gen": "^8.1.1",
     "@types/chrome": "^0.0.287",
     "@types/react": "^18.3.16",
-    "@types/react-dom": "^18.3.3",
+    "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
     "@vitejs/plugin-react": "^4.3.4",
