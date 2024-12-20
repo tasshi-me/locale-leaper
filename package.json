@@ -33,7 +33,7 @@
     "@cybozu/eslint-config": "^23.0.0",
     "@kintone/dts-gen": "^8.1.1",
     "@types/chrome": "^0.0.287",
-    "@types/react": "^18.3.17",
+    "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "@typescript-eslint/parser": "^8.18.1",
