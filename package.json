@@ -22,7 +22,7 @@
   "license": "MIT",
   "packageManager": "pnpm@9.15.9",
   "dependencies": {
-    "react": "^18.3.1",
+    "react": "^19.1.0",
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "styled-components": "^6.1.17",
@@ -33,7 +33,7 @@
     "@cybozu/eslint-config": "^23.0.0",
     "@kintone/dts-gen": "^8.1.1",
     "@types/chrome": "^0.0.313",
-    "@types/react": "^18.3.20",
+    "@types/react": "^19.1.1",
     "@types/react-dom": "^18.3.6",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
