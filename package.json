@@ -29,7 +29,7 @@
     "swr": "^2.3.3"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "2.0.0-beta.32",
+    "@crxjs/vite-plugin": "2.0.0-beta.33",
     "@cybozu/eslint-config": "^23.0.0",
     "@kintone/dts-gen": "^8.1.1",
     "@types/chrome": "^0.0.321",
