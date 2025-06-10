@@ -25,8 +25,8 @@ importers:
         version: 2.3.3(react@18.3.1)
     devDependencies:
       '@crxjs/vite-plugin':
-        specifier: 2.0.0-beta.33
-        version: 2.0.0-beta.33
+        specifier: 2.0.0
+        version: 2.0.0
       '@cybozu/eslint-config':
         specifier: ^23.0.0
         version: 23.0.0(eslint@8.57.1)(prettier@3.5.3)(typescript@5.4.5)
@@ -195,8 +195,8 @@ packages:
     resolution: {integrity: sha512-ETyHEk2VHHvl9b9jZP5IHPavHYk57EhanlRRuae9XCpb/j5bDCbPPMOBfCWhnl/7EDJz0jEMCi/RhccCE8r1+Q==}
     engines: {node: '>=6.9.0'}
 
-  '@crxjs/vite-plugin@2.0.0-beta.33':
-    resolution: {integrity: sha512-sSVKX6d4LBfScK6QZ9Qqs94LZ25uY0yTxoe4EOVqQfYvxb7AhnVo/YCvzeT113BRzhFA3IBCmAhTUASXS2aPKw==}
+  '@crxjs/vite-plugin@2.0.0':
+    resolution: {integrity: sha512-hhqq1S8tm4Reuo4oJFi/GbzFOm8uP9ihJcbkJXGYJy/oRc4KVnH7ANwkQslzGoZYEO92HsxVaiJl/OBn4oeavg==}
 
   '@cybozu/eslint-config@23.0.0':
     resolution: {integrity: sha512-xfQVq794pcSDi+q2T5Y83lQuFZQSiEGt8xW0zL8vEh+ux0SrpLzmIj4YFeBTVrZq6+HqnPSZfFRr09BlCSHObQ==}
@@ -3132,6 +3132,9 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
 
+  pathe@2.0.3:
+    resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
+
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
 
@@ -4251,19 +4254,20 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@crxjs/vite-plugin@2.0.0-beta.33':
+  '@crxjs/vite-plugin@2.0.0':
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@webcomponents/custom-elements': 1.6.0
       acorn-walk: 8.3.2
       cheerio: 1.0.0-rc.12
       convert-source-map: 1.9.0
-      debug: 4.3.4
+      debug: 4.4.0
       es-module-lexer: 0.10.5
       fast-glob: 3.3.2
       fs-extra: 10.1.0
       jsesc: 3.0.2
       magic-string: 0.30.12
+      pathe: 2.0.3
       picocolors: 1.1.1
       react-refresh: 0.13.0
       rollup: 2.79.2
@@ -7775,6 +7779,8 @@ snapshots:
 
   path-type@4.0.0: {}
 
+  pathe@2.0.3: {}
+
   pend@1.2.0: {}
 
   performance-now@2.1.0: {}
@@ -8073,7 +8079,7 @@ snapshots:
 
   rxjs@7.5.7:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   safe-array-concat@1.1.2:
     dependencies:
