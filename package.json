@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "2.2.0",
-    "@cybozu/eslint-config": "^23.0.0",
+    "@cybozu/eslint-config": "^24.3.0",
     "@kintone/dts-gen": "^8.1.2",
     "@types/chrome": "^0.1.12",
     "@types/react": "^18.3.24",
