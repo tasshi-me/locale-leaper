@@ -43,7 +43,7 @@ importers:
         specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.24)
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.44.1
+        specifier: ^8.45.0
         version: 8.46.0(@typescript-eslint/parser@8.46.0(eslint@8.57.1)(typescript@5.4.5))(eslint@8.57.1)(typescript@5.4.5)
       '@typescript-eslint/parser':
         specifier: ^8.44.1
