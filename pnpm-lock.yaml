@@ -55,7 +55,7 @@ importers:
         specifier: ^8.57.1
         version: 8.57.1
       eslint-plugin-react-hooks:
-        specifier: ^7.0.0
+        specifier: ^7.0.1
         version: 7.0.1(eslint@8.57.1)
       eslint-plugin-react-refresh:
         specifier: ^0.4.24
@@ -4655,7 +4655,7 @@ snapshots:
 
   '@types/babel__template@7.4.4':
     dependencies:
-      '@babel/parser': 7.27.5
+      '@babel/parser': 7.28.0
       '@babel/types': 7.27.6
 
   '@types/babel__traverse@7.20.5':
