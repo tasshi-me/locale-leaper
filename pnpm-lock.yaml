@@ -18,8 +18,8 @@ importers:
         specifier: ^5.5.0
         version: 5.5.0(react@18.3.1)
       styled-components:
-        specifier: ^6.3.8
-        version: 6.3.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^6.3.9
+        version: 6.3.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       swr:
         specifier: ^2.4.0
         version: 2.4.0(react@18.3.1)
@@ -3722,8 +3722,8 @@ packages:
     resolution: {integrity: sha512-V1LGY4UUo0jgwC+ELQ2BNWfPa17TIuwBLg+j1AA/9RPzKINl1lhxVEu2r+ZTTO8aetIsUzE5Qj6LMSBkoGYKKw==}
     engines: {node: '>=14.16'}
 
-  styled-components@6.3.8:
-    resolution: {integrity: sha512-Kq/W41AKQloOqKM39zfaMdJ4BcYDw/N5CIq4/GTI0YjU6pKcZ1KKhk6b4du0a+6RA9pIfOP/eu94Ge7cu+PDCA==}
+  styled-components@6.3.9:
+    resolution: {integrity: sha512-J72R4ltw0UBVUlEjTzI0gg2STOqlI9JBhQOL4Dxt7aJOnnSesy0qJDn4PYfMCafk9cWOaVg129Pesl5o+DIh0Q==}
     engines: {node: '>= 16'}
     peerDependencies:
       react: '>= 16.8.0'
@@ -8523,7 +8523,7 @@ snapshots:
 
   strip-json-comments@5.0.0: {}
 
-  styled-components@6.3.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  styled-components@6.3.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@emotion/is-prop-valid': 1.4.0
       '@emotion/unitless': 0.10.0
