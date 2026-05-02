@@ -25,7 +25,7 @@ jobs:
     if: ${{ needs.release.outputs.release_created }}
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@8912a9102ac27614460f54aedde9e1e7f9aec20d # v6
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
