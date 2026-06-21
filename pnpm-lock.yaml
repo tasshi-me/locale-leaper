@@ -25,8 +25,8 @@ importers:
         version: 2.4.1(react@18.3.1)
     devDependencies:
       '@crxjs/vite-plugin':
-        specifier: 2.6.1
-        version: 2.6.1(vite@4.5.14(@types/node@20.11.9))
+        specifier: 2.7.0
+        version: 2.7.0(vite@4.5.14(@types/node@20.11.9))
       '@cybozu/eslint-config':
         specifier: ^23.0.0
         version: 23.0.0(eslint@8.57.1)(prettier@3.8.4)(typescript@5.4.5)
@@ -191,8 +191,8 @@ packages:
     resolution: {integrity: sha512-x0LvFTekgSX+83TI28Y9wYPUfzrnl2aT5+5QLnO6v7mSJYtEEevuDRN0F0uSHRk1G1IWZC43o00Y0xDDrpBGPQ==}
     engines: {node: '>=6.9.0'}
 
-  '@crxjs/vite-plugin@2.6.1':
-    resolution: {integrity: sha512-0RmYlUtQGvHXCz3B/FW7P5j+RBZUc4mk3GIRPXCx5a52N8AQ0e35GvE+Pcap/TKuI09PJgcRTdXeBOavtLVyYg==}
+  '@crxjs/vite-plugin@2.7.0':
+    resolution: {integrity: sha512-NN98fUgJOEiVBshELJnYCW54+K2Yy067++/K+RdxclHsyG08ea+Em3lJJTubtPTCl2bECyp4+K69oT+izilnNw==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
 
@@ -949,8 +949,8 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn-walk@8.3.2:
-    resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
+  acorn-walk@8.3.5:
+    resolution: {integrity: sha512-HEHNfbars9v4pgpW6SO1KSPkfoS0xVOM/9UzkJltjlsHZmJasxg8aXkuZa7SMf8vKGIBhpUsPluQSqhJFCqebw==}
     engines: {node: '>=0.4.0'}
 
   acorn@8.11.3:
@@ -3198,6 +3198,10 @@ packages:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
 
+  picomatch@4.0.4:
+    resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
+    engines: {node: '>=12'}
+
   pino-abstract-transport@1.1.0:
     resolution: {integrity: sha512-lsleG3/2a/JIWUtf9Q5gUNErBqwIu1tUKTT3dUzaf5DySw9ra1wcqKjJjLX1VTY64Wk1eEOYsVGSaGfCK85ekA==}
 
@@ -3322,10 +3326,6 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-
-  react-refresh@0.13.0:
-    resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
-    engines: {node: '>=0.10.0'}
 
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
@@ -3644,6 +3644,7 @@ packages:
   stream-to-promise@3.0.0:
     resolution: {integrity: sha512-h+7wLeFiYegOdgTfTxjRsrT7/Op7grnKEIHWgaO1RTHwcwk7xRreMr3S8XpDfDMesSxzgM2V4CxNCFAGo6ssnA==}
     engines: {node: '>= 10'}
+    deprecated: Deprecated. Use node:stream/promises and node:stream/consumers instead.
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -3798,6 +3799,10 @@ packages:
 
   tinyglobby@0.2.15:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
+    engines: {node: '>=12.0.0'}
+
+  tinyglobby@0.2.17:
+    resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
   tmp@0.2.1:
@@ -4320,10 +4325,10 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@crxjs/vite-plugin@2.6.1(vite@4.5.14(@types/node@20.11.9))':
+  '@crxjs/vite-plugin@2.7.0(vite@4.5.14(@types/node@20.11.9))':
     dependencies:
       '@webcomponents/custom-elements': 1.6.0
-      acorn-walk: 8.3.2
+      acorn-walk: 8.3.5
       convert-source-map: 1.9.0
       debug: 4.4.3
       es-module-lexer: 0.10.5
@@ -4333,10 +4338,9 @@ snapshots:
       node-html-parser: 7.1.0
       pathe: 2.0.3
       picocolors: 1.1.1
-      react-refresh: 0.13.0
       rollup: 2.80.0
       rxjs: 7.5.7
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.17
       vite: 4.5.14(@types/node@20.11.9)
     transitivePeerDependencies:
       - supports-color
@@ -5242,7 +5246,9 @@ snapshots:
     dependencies:
       acorn: 8.14.0
 
-  acorn-walk@8.3.2: {}
+  acorn-walk@8.3.5:
+    dependencies:
+      acorn: 8.14.0
 
   acorn@8.11.3: {}
 
@@ -6736,6 +6742,10 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.3
 
+  fdir@6.5.0(picomatch@4.0.4):
+    optionalDependencies:
+      picomatch: 4.0.4
+
   fetch-blob@3.2.0:
     dependencies:
       node-domexception: 1.0.0
@@ -7899,6 +7909,8 @@ snapshots:
 
   picomatch@4.0.3: {}
 
+  picomatch@4.0.4: {}
+
   pino-abstract-transport@1.1.0:
     dependencies:
       readable-stream: 4.5.2
@@ -8022,8 +8034,6 @@ snapshots:
       react: 18.3.1
 
   react-is@16.13.1: {}
-
-  react-refresh@0.13.0: {}
 
   react-refresh@0.17.0: {}
 
@@ -8610,6 +8620,11 @@ snapshots:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
+
+  tinyglobby@0.2.17:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
 
   tmp@0.2.1:
     dependencies:
