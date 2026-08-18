@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.1](https://github.com/tasshi-me/locale-leaper/compare/locale-leaper-v1.0.0...locale-leaper-v1.0.1) (2026-08-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency styled-components to ^6.4.4 ([#681](https://github.com/tasshi-me/locale-leaper/issues/681)) ([31112fa](https://github.com/tasshi-me/locale-leaper/commit/31112fa7009efc961105b7ca9da3e7ad5dbc3a4e))
+* **deps:** update dependency styled-components to ^6.5.0 ([#690](https://github.com/tasshi-me/locale-leaper/issues/690)) ([b9c9098](https://github.com/tasshi-me/locale-leaper/commit/b9c90982392cf6c75533ad7cdc96ef20d1803420))
+* **deps:** update dependency styled-components to ^6.5.1 ([#691](https://github.com/tasshi-me/locale-leaper/issues/691)) ([9839634](https://github.com/tasshi-me/locale-leaper/commit/9839634f6e9a33490a97a233465eeea3d179d70e))
+* **deps:** update dependency styled-components to ^6.5.2 ([#694](https://github.com/tasshi-me/locale-leaper/issues/694)) ([ebbfc88](https://github.com/tasshi-me/locale-leaper/commit/ebbfc88548030bc03c4faefaa9e4b5a4d9bf1626))
+* **deps:** update dependency styled-components to ^6.5.3 ([#697](https://github.com/tasshi-me/locale-leaper/issues/697)) ([7cba0ad](https://github.com/tasshi-me/locale-leaper/commit/7cba0addef2afca25d77cdec55c007177598ecb3))
+* **deps:** update dependency swr to ^2.5.0 ([#687](https://github.com/tasshi-me/locale-leaper/issues/687)) ([32ec907](https://github.com/tasshi-me/locale-leaper/commit/32ec907c5116c0bec8a5b9d171f637a57d771440))
+* **deps:** update dependency swr to ^2.5.1 ([#695](https://github.com/tasshi-me/locale-leaper/issues/695)) ([5f4f8a8](https://github.com/tasshi-me/locale-leaper/commit/5f4f8a8d589df1c88c8b9e6237ab57bb42d89c90))
+
 ## [1.0.0](https://github.com/tasshi-me/locale-leaper/compare/locale-leaper-v0.1.0...locale-leaper-v1.0.0) (2024-04-30)
 
 
